@@ -1,0 +1,30 @@
+* {
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  max-width: 1130px;
+}
+
+li {
+  list-style-type: none;
+}
+
+header {
+  display: flex;
+  gap: 48px;
+
+  img {
+    max-width: 130px;
+  }
+  ul {
+    display: flex;
+    gap: 48px;
+    padding: 0;
+  }
+}
+
+#presentation {
+  background-color: #ffde45;
+}
