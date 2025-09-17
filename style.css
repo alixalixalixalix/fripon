@@ -1,10 +1,15 @@
+@font-face {
+  font-family: "boldenvan";
+  src: url("sources/boldenvan.ttf");
+}
+
 * {
   font-family: "DM Sans", sans-serif;
 }
 
 body {
-  margin: 0;
-  max-width: 1130px;
+  margin: auto;
+  max-width: 1440px;
 }
 
 main {
@@ -15,9 +20,23 @@ h1 {
   font-size: 36px;
 }
 
+h3 {
+  font-size: 24px;
+}
+
 p,
 li {
   font-size: 16px;
+}
+
+span {
+  font-weight: 800;
+}
+
+section,
+header {
+  margin-right: 36px;
+  margin-left: 36px;
 }
 
 header {
@@ -27,6 +46,7 @@ header {
   gap: 48px;
   ul {
     display: flex;
+    align-items: center;
     gap: 48px;
     padding: 0;
     img {
@@ -51,9 +71,15 @@ header {
   display: flex;
   align-items: center;
   #presentation__txt {
-    max-width: 550px;
+    width: 50%;
     h1 {
       margin: 0;
+    }
+    p {
+      max-width: 550px;
+      margin: 16px 0 16px 0;
+      font-size: 18px;
+      line-height: 26px;
     }
     button {
       padding: 10px 16px;
@@ -61,9 +87,13 @@ header {
       background-color: black;
       border: 0px;
       color: white;
+      font-weight: 600;
     }
   }
   #presentation__img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
     img {
       max-width: 450px;
     }
@@ -83,12 +113,24 @@ header {
 }
 
 #demarche {
-  background-color: green;
+  margin-top: 200px;
   #demarche__intro {
+    padding-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
     h1,
     p {
       text-align: center;
       margin: 0;
+    }
+    h1 {
+      margin-bottom: 16px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 26px;
     }
   }
   #demarche__liste {
@@ -97,6 +139,46 @@ header {
     .demarche-card {
       background-color: #f9f3e8;
       border-radius: 20px;
+      padding: 24px;
+      width: 33%;
+      .demarche-card-num {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 16px;
+        width: 16px;
+        padding: 24px;
+        margin: 0;
+        background-color: #ff6d33;
+        color: white;
+        font-size: 32px;
+        font-family: "boldenvan";
+        border-radius: 100px;
+        margin-top: -55px;
+      }
+      h3 {
+        margin: 16px 0px;
+      }
+      p {
+        margin: 0px 0px 16px 0px;
+      }
+      ul {
+        padding-left: 16px;
+        font-weight: 600;
+      }
+      button {
+        border-radius: 50px;
+        border: 0px;
+        background-color: white;
+        padding: 6px 8px;
+        font-weight: 600;
+        color: #ff6d33;
+        font-size: 16px;
+      }
+      h3,
+      li {
+        color: #ff6d33;
+      }
     }
   }
 }
