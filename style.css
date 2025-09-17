@@ -7,24 +7,96 @@ body {
   max-width: 1130px;
 }
 
+main {
+  margin: auto;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+p,
 li {
-  list-style-type: none;
+  font-size: 16px;
 }
 
 header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   gap: 48px;
-
-  img {
-    max-width: 130px;
-  }
   ul {
     display: flex;
     gap: 48px;
     padding: 0;
+    img {
+      max-width: 130px;
+    }
+    li {
+      list-style-type: none;
+      vertical-align: middle;
+    }
+  }
+  button {
+    padding: 10px 16px;
+    border-radius: 100px;
+    background-color: black;
+    border: 0px;
+    color: white;
   }
 }
 
 #presentation {
   background-color: #ffde45;
+  display: flex;
+  align-items: center;
+  #presentation__txt {
+    max-width: 550px;
+    h1 {
+      margin: 0;
+    }
+    button {
+      padding: 10px 16px;
+      border-radius: 100px;
+      background-color: black;
+      border: 0px;
+      color: white;
+    }
+  }
+  #presentation__img {
+    img {
+      max-width: 450px;
+    }
+  }
+}
+
+#services {
+  display: flex;
+  gap: 24px;
+  #services__intro {
+    max-width: 360px;
+  }
+  #services__liste {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+#demarche {
+  background-color: green;
+  #demarche__intro {
+    h1,
+    p {
+      text-align: center;
+      margin: 0;
+    }
+  }
+  #demarche__liste {
+    display: flex;
+    gap: 24px;
+    .demarche-card {
+      background-color: #f9f3e8;
+      border-radius: 20px;
+    }
+  }
 }

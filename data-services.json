@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "titre": "Promenades au grand air",
+    "texte": "Des sorties 100% plaisir en ton absence, pour explorer et interagir avec son environnement, sans contraintes éducatives.",
+    "tarif": "32€",
+    "heure": "/2h",
+    "icon": "sources/icons/trefle.svg"
+  },
+  {
+    "id": 2,
+    "titre": "Education du chiot (- de 8 mois)",
+    "texte": "Des séances individuelles pour offrir les bonnes bases à ton chiot, t’aider à le comprendre et construire une relation de confiance avec toi.",
+    "tarif": "40€",
+    "heure": "/1h",
+    "icon": "sources/icons/patte.svg"
+  },
+  {
+    "id": 3,
+    "titre": "Education du chien adulte",
+    "texte": "Des séances individuelles pour t’aider à communiquer avec ton chien et retrouver de la fluidité dans votre quotidien ensemble.",
+    "tarif": "45€",
+    "heure": "/1h",
+    "icon": "sources/icons/os.svg"
+  },
+  {
+    "id": 4,
+    "titre": "Rééducation/désensibilisation",
+    "texte": "Des séances d’entrainements pour t’aider à solutionner des petits et gros couacs de comportement au quotidien.",
+    "tarif": "45€",
+    "heure": "/1h",
+    "icon": "sources/icons/puzzle.svg"
+  }
+]
