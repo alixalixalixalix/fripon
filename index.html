@@ -15,47 +15,49 @@
     />
   </head>
   <body>
-    <main>
       <header>
-        <ul>
-          <img src="sources/fripon-logo.png" alt="" />
-          <li><a href="#services">Services et tarifs</a></li>
-          <li><a href="#demarche">Démarche</a></li>
-          <li><a href="#about">À propos</a></li>
-        </ul>
-        <button><a href="#contact">Contact</a></button>
+        <div class="marginSite">
+          <ul>
+            <img src="sources/fripon-logo.png" alt="" />
+            <li><a href="#services">Services et tarifs</a></li>
+            <li><a href="#demarche">Démarche</a></li>
+            <li><a href="#about">À propos</a></li>
+          </ul>
+          <button><a href="#contact">Contact</a></button>
+        </div>
       </header>
 
       <section id="presentation">
-        <div id="presentation__txt">
-          <h1>Éducation canine<br />& promenades joyeuses</h1>
-          <p>
-            Ensemble on explore comment mieux comprendre ton bolide, répondre à
-            vos besoins mutuels et bâtir une relation harmonieuse.
-          </p>
-          <button>Découvrir les services</button>
-        </div>
-        <div id="presentation__img">
-          <img src="sources/chienchien.png" alt="" />
-          <img class="wouf gauche" src="sources/wouf.png" alt="" />
-          <img class="wouf droite" src="sources/wouf.png" alt="" />
+        <div class="marginSite">
+          <div id="presentation__txt">
+            <h1>Éducation canine<br />& promenades joyeuses</h1>
+            <p>
+              Ensemble on explore comment mieux comprendre ton bolide, répondre
+              à vos besoins mutuels et bâtir une relation harmonieuse.
+            </p>
+            <button class="boutonAction">Découvrir les services</button>
+          </div>
+          <div id="presentation__img">
+            <img src="sources/chienchien.png" alt="" />
+            <img class="wouf gauche" src="sources/wouf.png" alt="" />
+            <img class="wouf droite" src="sources/wouf.png" alt="" />
+          </div>
         </div>
       </section>
 
       <section id="services">
-        <div id="services__intro">
-          <h2>Services & tarifs</h2>
-          <p>
-            Des offres sur-mesure pour répondre à tous tes besoins et ceux de ta
-            fripouille.
-          </p>
-        </div>
-        <div id="services__liste">
-          <div class="">
-            <hr />
-            <div>
+        <div class="marginSite">
+          <div id="services__intro">
+            <h2>Services & tarifs</h2>
+            <p>
+              Des offres sur-mesure pour répondre à tous tes besoins et ceux de
+              ta fripouille.
+            </p>
+          </div>
+          <div id="services__liste">
+            <div class="services__card">
               <img src="sources/icons/trefle.svg" alt="" />
-              <div>
+              <div class="services__card__txt">
                 <h3>Promenades au grand air</h3>
                 <p>
                   Des sorties 100% plaisir en ton absence, pour explorer et
@@ -63,122 +65,169 @@
                 </p>
                 <button>En savoir plus</button>
               </div>
-              <div>
+              <div class="services__card__tarifs">
                 <h3>32€</h3>
                 <h4>/2h</h4>
               </div>
             </div>
-          </div>
-          <div id="tips">
-            <img src="" alt="" />
-            <div>
-              <h5>Pour les clients Fripon</h5>
-              <p>
-                En devenant client, tu pourras aussi accéder à d’autres services
-                comme des balades éducatives collectives et des cours collectifs
-                uniquement réservés à la communauté.
-              </p>
+            <div class="services__card">
+              <img src="sources/icons/patte.svg" alt="" />
+              <div class="services__card__txt">
+                <h3>Education du chiot (- de 8 mois)</h3>
+                <p>
+                  Des séances individuelles pour offrir les bonnes bases à ton chiot, t’aider à le comprendre et construire une relation de confiance avec toi.
+                </p>
+                <button>En savoir plus</button>
+              </div>
+              <div class="services__card__tarifs">
+                <h3>40€</h3>
+                <h4>/1h</h4>
+              </div>
+            </div>
+            <div class="services__card">
+              <img src="sources/icons/os.svg" alt="" />
+              <div class="services__card__txt">
+                <h3>Education du chien adulte</h3>
+                <p>
+                  Des séances individuelles pour t’aider à communiquer avec ton chien et retrouver de la fluidité dans votre quotidien ensemble.
+                </p>
+                <button>En savoir plus</button>
+              </div>
+              <div class="services__card__tarifs">
+                <h3>45€</h3>
+                <h4>/1h</h4>
+              </div>
+            </div>
+            <div class="services__card">
+              <img src="sources/icons/puzzle.svg" alt="" />
+              <div class="services__card__txt">
+                <h3>Rééducation/désensibilisation</h3>
+                <p>
+                  Des séances d’entrainements pour t’aider à solutionner des petits et gros couacs de comportement au quotidien.
+                </p>
+                <button>En savoir plus</button>
+              </div>
+              <div class="services__card__tarifs">
+                <h3>45€</h3>
+                <h4>/1h</h4>
+              </div>
+            </div>
+            <div id="services__tips">
+              <img src="sources/icons/idee.svg" alt="" />
+              <div>
+                <h5>Pour les clients Fripon</h5>
+                <p>
+                  En devenant client, tu pourras aussi accéder à d’autres
+                  services comme des balades éducatives collectives et des cours
+                  collectifs uniquement réservés à la communauté.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <section id="demarche">
-        <div id="demarche__intro">
-          <h2>Comment ça marche ?</h2>
-          <p>
-            Les étapes nécessaires pour bien démarrer les séances d’éducation et
-            de rééducation/désensibilisation.
-          </p>
-        </div>
-        <div id="demarche__liste">
-          <div class="demarche-card">
-            <p class="demarche-card-num">1</p>
-            <h3>Premier échange</h3>
+        <div class="marginSite">
+          <div id="demarche__intro">
+            <h2>Comment ça marche ?</h2>
             <p>
-              Un premier échange de <span>30 minutes</span> pour faire
-              connaissance et t’expliquer mon mode de fonctionnement et mes
-              méthodes.
+              Les étapes nécessaires pour bien démarrer les séances d’éducation
+              et de rééducation/désensibilisation.
             </p>
-            <button>Gratuit</button>
           </div>
-          <div class="demarche-card">
-            <p class="demarche-card-num">2</p>
-            <h3>Première rencontre</h3>
-            <p>
-              À domicile, j’observe ton chien dans son environnement, je
-              comprends vos besoins et construis un
-              <span>plan d’entraînement</span> qui y répond.
-            </p>
-            <ul>
-              <li>Bilan comportemental (1h30) - 80€</li>
-              <li>1er rendez-vous éducation (1h) - 50€</li>
-            </ul>
-          </div>
-          <div class="demarche-card">
-            <p class="demarche-card-num">3</p>
-            <h3>Suivi & entrainement</h3>
-            <p>
-              On avance pas à pas : des sessions ensemble pour
-              <span>progresser</span> et <span>t’accompagner</span> dans ton
-              quotidien et les nouvelles situations que tu rencontres.
-            </p>
-            <ul>
-              <li>Suivi chiot (1h) - 40€</li>
-              <li>Suivi chien adulte (1h) : 45€</li>
-            </ul>
+          <div id="demarche__liste">
+            <div class="demarche-card">
+              <p class="demarche-card-num">1</p>
+              <h3>Premier échange</h3>
+              <p>
+                Un premier échange de <span>30 minutes</span> pour faire
+                connaissance et t’expliquer mon mode de fonctionnement et mes
+                méthodes.
+              </p>
+              <button>Gratuit</button>
+            </div>
+            <div class="demarche-card">
+              <p class="demarche-card-num">2</p>
+              <h3>Première rencontre</h3>
+              <p>
+                À domicile, j’observe ton chien dans son environnement, je
+                comprends vos besoins et construis un
+                <span>plan d’entraînement</span> qui y répond.
+              </p>
+              <ul>
+                <li>Bilan comportemental (1h30) - 80€</li>
+                <li>1er rendez-vous éducation (1h) - 50€</li>
+              </ul>
+            </div>
+            <div class="demarche-card">
+              <p class="demarche-card-num">3</p>
+              <h3>Suivi & entrainement</h3>
+              <p>
+                On avance pas à pas : des sessions ensemble pour
+                <span>progresser</span> et <span>t’accompagner</span> dans ton
+                quotidien et les nouvelles situations que tu rencontres.
+              </p>
+              <ul>
+                <li>Suivi chiot (1h) - 40€</li>
+                <li>Suivi chien adulte (1h) : 45€</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="about">
-        <div id="about__img">
-          <img src="sources/chienchien.png" alt="" />
-        </div>
-        <div id="about__txt">
-          <h2>À propos de Fripon</h2>
-          <p>
-            Moi c’est Tess, Éducatrice-Comportamentaliste certifiée au
-            <span>Centre du Bien-Être Animal</span> et détentrice de
-            l’<span>ACACED</span>.
-          </p>
-          <p>
-            J’ai fondé Fripon car j’ai à cœur d'accompagner les chiens avec
-            douceur et bienveillance, en respectant leur nature profonde.
-          </p>
-          <p>
-            Mon approche repose sur une conviction simple : chaque chien est
-            unique, avec son caractère, ses besoins et sa petite dose de malice.
-             Ce n'est pas à lui de rentrer dans un cadre rigide, mais à nous de
-            trouver ensemble comment mieux le comprendre et créer une
-            <span>relation gagnant-gagnant</span> avec ton chien.
-          </p>
-          <p>
-            Chez Fripon, on ne cherche pas des chiens parfaits, mais des chiens
-            bien dans leurs pattes et libres dans leur tête.
-          </p>
-          <button>Rencontrons-nous</button>
+        <div class="marginSite">
+          <div id="about__img">
+            <img src="sources/chienx3.png" alt="" />
+          </div>
+          <div id="about__txt">
+            <h2>À propos de Fripon</h2>
+            <p>
+              Moi c’est Tess, Éducatrice-Comportamentaliste certifiée au
+              <span>Centre du Bien-Être Animal</span> et détentrice de
+              l’<span>ACACED</span>.
+            </p>
+            <p>
+              J’ai fondé Fripon car j’ai à cœur d'accompagner les chiens avec
+              douceur et bienveillance, en respectant leur nature profonde.
+            </p>
+            <p>
+              Mon approche repose sur une conviction simple : chaque chien est
+              unique, avec son caractère, ses besoins et sa petite dose de
+              malice. Ce n'est pas à lui de rentrer dans un cadre rigide, mais à
+              nous de trouver ensemble comment mieux le comprendre et créer une
+              <span>relation gagnant-gagnant</span> avec ton chien.
+            </p>
+            <p>
+              Chez Fripon, on ne cherche pas des chiens parfaits, mais des
+              chiens bien dans leurs pattes et libres dans leur tête.
+            </p>
+            <button class="boutonAction">Rencontrons-nous</button>
+          </div>
         </div>
       </section>
 
       <section id="contact">
-        <div id="contact__img">
-          <img class="wouf gauche" src="sources/wouf.png" alt="" />
-          <img class="wouf droite" src="sources/wouf.png" alt="" />
-        </div>
-        <h2>Parlons de ton bolide</h2>
-        <div id="contact__coordonnees">
-          <div class="contact__coordonnees__tel">
-            <img src="sources/icons/tel.svg" alt="" />
-            <h4>06 35 95 05 57</h4>
+        <div class="marginSite">
+          <div id="contact__img">
+            <img class="wouf gauche" src="sources/wouf.png" alt="" />
+            <img class="wouf droite" src="sources/wouf.png" alt="" />
           </div>
-          <div class="contact__coordonnees__mail">
-            <img src="sources/icons/mail.svg" alt="" />
-            <h4>contact@fripon.fr</h4>
+          <h2>Parlons de ton bolide</h2>
+          <div id="contact__coordonnees">
+            <div class="contact__coordonnees__tel">
+              <img src="sources/icons/tel.svg" alt="" />
+              <h4>06 35 95 05 57</h4>
+            </div>
+            <div class="contact__coordonnees__mail">
+              <img src="sources/icons/mail.svg" alt="" />
+              <h4>contact@fripon.fr</h4>
+            </div>
           </div>
         </div>
       </section>
       <p class="legal">Copyright © 2025 Fripon. Tous droits réservés.</p>
-    </main>
   </body>
 </html>
