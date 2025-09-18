@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="style.css" rel="stylesheet" />
 
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="sources/favicon.png"
-    />
+    <link rel="shortcut icon" type="image/x-icon" href="sources/favicon.png" />
     <title>FRIPON | Éducation canine</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,16 +19,16 @@
       <header>
         <ul>
           <img src="sources/fripon-logo.png" alt="" />
-          <li>Services et tarifs</li>
-          <li>Démarche</li>
-          <li>À propos</li>
+          <li><a href="#services">Services et tarifs</a></li>
+          <li><a href="#demarche">Démarche</a></li>
+          <li><a href="#about">À propos</a></li>
         </ul>
-        <button>Contact</button>
+        <button><a href="#contact">Contact</a></button>
       </header>
 
       <section id="presentation">
         <div id="presentation__txt">
-          <h1>Éducation canine<br>& promenades joyeuses</h1>
+          <h1>Éducation canine<br />& promenades joyeuses</h1>
           <p>
             Ensemble on explore comment mieux comprendre ton bolide, répondre à
             vos besoins mutuels et bâtir une relation harmonieuse.
@@ -41,6 +37,8 @@
         </div>
         <div id="presentation__img">
           <img src="sources/chienchien.png" alt="" />
+          <img class="wouf gauche" src="sources/wouf.png" alt="" />
+          <img class="wouf droite" src="sources/wouf.png" alt="" />
         </div>
       </section>
 
@@ -87,7 +85,7 @@
 
       <section id="demarche">
         <div id="demarche__intro">
-          <h1>Comment ça marche ?</h1>
+          <h2>Comment ça marche ?</h2>
           <p>
             Les étapes nécessaires pour bien démarrer les séances d’éducation et
             de rééducation/désensibilisation.
@@ -98,8 +96,9 @@
             <p class="demarche-card-num">1</p>
             <h3>Premier échange</h3>
             <p>
-              Un premier échange de <span>30 minutes</span> pour faire connaissance et
-              t’expliquer mon mode de fonctionnement et mes méthodes.
+              Un premier échange de <span>30 minutes</span> pour faire
+              connaissance et t’expliquer mon mode de fonctionnement et mes
+              méthodes.
             </p>
             <button>Gratuit</button>
           </div>
@@ -108,8 +107,8 @@
             <h3>Première rencontre</h3>
             <p>
               À domicile, j’observe ton chien dans son environnement, je
-              comprends vos besoins et construis un <span>plan d’entraînement</span> qui y
-              répond.
+              comprends vos besoins et construis un
+              <span>plan d’entraînement</span> qui y répond.
             </p>
             <ul>
               <li>Bilan comportemental (1h30) - 80€</li>
@@ -120,9 +119,9 @@
             <p class="demarche-card-num">3</p>
             <h3>Suivi & entrainement</h3>
             <p>
-              On avance pas à pas : des sessions ensemble pour <span>progresser</span> et
-              <span>t’accompagner</span> dans ton quotidien et les nouvelles situations que
-              tu rencontres.
+              On avance pas à pas : des sessions ensemble pour
+              <span>progresser</span> et <span>t’accompagner</span> dans ton
+              quotidien et les nouvelles situations que tu rencontres.
             </p>
             <ul>
               <li>Suivi chiot (1h) - 40€</li>
@@ -133,35 +132,53 @@
       </section>
 
       <section id="about">
-        <div id="about__img"></div>
+        <div id="about__img">
+          <img src="sources/chienchien.png" alt="" />
+        </div>
         <div id="about__txt">
-          <h1>À propos de Fripon</h1>
+          <h2>À propos de Fripon</h2>
           <p>
-            Moi c’est Tess, Éducatrice-Comportamentaliste certifiée au Centre du
-            Bien-Être Animal et détentrice de l’ACACED.
+            Moi c’est Tess, Éducatrice-Comportamentaliste certifiée au
+            <span>Centre du Bien-Être Animal</span> et détentrice de
+            l’<span>ACACED</span>.
           </p>
           <p>
             J’ai fondé Fripon car j’ai à cœur d'accompagner les chiens avec
             douceur et bienveillance, en respectant leur nature profonde.
+          </p>
+          <p>
+            Mon approche repose sur une conviction simple : chaque chien est
+            unique, avec son caractère, ses besoins et sa petite dose de malice.
+             Ce n'est pas à lui de rentrer dans un cadre rigide, mais à nous de
+            trouver ensemble comment mieux le comprendre et créer une
+            <span>relation gagnant-gagnant</span> avec ton chien.
+          </p>
+          <p>
+            Chez Fripon, on ne cherche pas des chiens parfaits, mais des chiens
+            bien dans leurs pattes et libres dans leur tête.
           </p>
           <button>Rencontrons-nous</button>
         </div>
       </section>
 
       <section id="contact">
-        <img src="" alt="" />
-        <h1>Parlons de ton bolide</h1>
+        <div id="contact__img">
+          <img class="wouf gauche" src="sources/wouf.png" alt="" />
+          <img class="wouf droite" src="sources/wouf.png" alt="" />
+        </div>
+        <h2>Parlons de ton bolide</h2>
         <div id="contact__coordonnees">
           <div class="contact__coordonnees__tel">
-            <img src="" alt="" />
+            <img src="sources/icons/tel.svg" alt="" />
             <h4>06 35 95 05 57</h4>
           </div>
           <div class="contact__coordonnees__mail">
-            <img src="" alt="" />
+            <img src="sources/icons/mail.svg" alt="" />
             <h4>contact@fripon.fr</h4>
           </div>
         </div>
       </section>
+      <p class="legal">Copyright © 2025 Fripon. Tous droits réservés.</p>
     </main>
   </body>
 </html>

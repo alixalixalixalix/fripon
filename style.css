@@ -17,11 +17,18 @@ main {
 }
 
 h1 {
+  font-size: 40px;
+}
+h2 {
   font-size: 36px;
 }
-
 h3 {
   font-size: 24px;
+}
+h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
 }
 
 p,
@@ -55,6 +62,10 @@ header {
     li {
       list-style-type: none;
       vertical-align: middle;
+      a {
+        color: black;
+        text-decoration: none;
+      }
     }
   }
   button {
@@ -63,6 +74,11 @@ header {
     background-color: black;
     border: 0px;
     color: white;
+    font-size: 16px;
+    a {
+      color: white;
+      text-decoration: none;
+    }
   }
 }
 
@@ -88,14 +104,30 @@ header {
       border: 0px;
       color: white;
       font-weight: 600;
+      font-size: 16px;
     }
   }
   #presentation__img {
     width: 50%;
     display: flex;
     justify-content: center;
+    position: relative;
     img {
       max-width: 450px;
+    }
+    .wouf {
+      position: absolute;
+      max-width: 180px;
+    }
+    .gauche {
+      left: 24px;
+      top: 42px;
+      transform: rotate(-7deg);
+    }
+    .droite {
+      right: 48px;
+      bottom: 42px;
+      transform: rotate(11deg);
     }
   }
 }
@@ -103,6 +135,7 @@ header {
 #services {
   display: flex;
   gap: 24px;
+  background-color: #f9f3e8;
   #services__intro {
     max-width: 360px;
   }
@@ -114,18 +147,19 @@ header {
 
 #demarche {
   margin-top: 200px;
+  margin-bottom: 200px;
   #demarche__intro {
     padding-bottom: 64px;
     display: flex;
     flex-direction: column;
     width: 50%;
     margin: auto;
-    h1,
+    h2,
     p {
       text-align: center;
       margin: 0;
     }
-    h1 {
+    h2 {
       margin-bottom: 16px;
     }
     p {
@@ -181,4 +215,69 @@ header {
       }
     }
   }
+}
+
+#about {
+  display: flex;
+  background-color: #f9f3e8;
+  #about__img {
+    width: 50%;
+    img {
+      width: 100%;
+      max-width: 450px;
+    }
+  }
+  #about__txt {
+    max-width: 550px;
+    width: 50%;
+    button {
+      padding: 10px 16px;
+      border-radius: 100px;
+      background-color: #ffde45;
+      border: 0px;
+      font-weight: 600;
+      font-size: 16px;
+    }
+  }
+}
+
+#contact {
+  margin: 85px 0;
+  padding: 40px;
+  width: 100%;
+  background-color: #ffbcd9;
+  border-radius: 30px;
+  #contact__img {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    img {
+      max-width: 180px;
+    }
+    .gauche {
+      transform: rotate(-6deg);
+    }
+    .droite {
+      transform: rotate(8deg);
+    }
+  }
+  h2 {
+    text-align: center;
+    margin: 24px 0px;
+  }
+  #contact__coordonnees {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    .contact__coordonnees__tel,
+    .contact__coordonnees__mail {
+      display: flex;
+      gap: 8px;
+    }
+  }
+}
+
+.legal {
+  color: #969696;
+  font-size: 16px;
 }
