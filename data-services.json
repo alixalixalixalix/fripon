@@ -3,32 +3,92 @@
     "id": 1,
     "titre": "Promenades au grand air",
     "texte": "Des sorties 100% plaisir en ton absence, pour explorer et interagir avec son environnement, sans contraintes éducatives.",
-    "tarif": "32€",
-    "heure": "/2h",
-    "icon": "sources/icons/trefle.svg"
+    "prix": "32€",
+    "duree": "/2h",
+    "icon": "sources/icons/trefle.svg",
+    "pourQui": [
+      "Chiens de tout âge ayant besoin de se dépenser et de varier leurs sorties.",
+      "Idéal si tu manques de temps ou si ton chien est très énergique."
+    ],
+    "objectifs": [
+      "Apporter la stimulation physique et mentale dont ton chien à besoin en ton absence",
+      "Renforcer son bien-être grâce à des sorties riches en exploration, en interactions et en découvertes.",
+      "Maintenir et entretenir des interactions sociales équilibrées en petits groupes."
+    ],
+    "comment": [
+      "Je viens chercher ton chien à domicile (Rennes et alentours).",
+      "Sortie de 2h en petit groupe ou en individuel selon ses besoins.",
+      "Retour à la maison après une balade riche et sécurisée."
+    ],
+    "localisation": "Forêts, parcs, chemins de campagne et espaces naturels autour et dans Rennes."
   },
   {
     "id": 2,
     "titre": "Education du chiot (- de 8 mois)",
     "texte": "Des séances individuelles pour offrir les bonnes bases à ton chiot, t’aider à le comprendre et construire une relation de confiance avec toi.",
-    "tarif": "40€",
-    "heure": "/1h",
-    "icon": "sources/icons/patte.svg"
+    "prix": "40€",
+    "duree": "/1h",
+    "icon": "sources/icons/patte.svg",
+    "pourQui": [
+      "Chiots de moins de 8 mois.",
+      "Tu souhaites partir sur de bonnes bases dès l’arrivée de ton chiot."
+    ],
+    "objectifs": [
+      "Apprendre les bases : propreté, autonomie, mordillements, gestion des émotions, bases éducatives (marche en laisse, rappel,...)",
+      "L’aider à bien grandir dans différents environnements.",
+      "Comprendre ton chiot et créer une relation de confiance avec lui."
+    ],
+    "comment": [
+      "Séances individuelles, adaptées à vos rythmes.",
+      "Travail à domicile pour les bases du quotidien ou en extérieur pour la socialisation.",
+      "Méthodes positives, courtes et ludiques."
+    ],
+    "localisation": "À domicile et en extérieur selon les besoins, dans Rennes et proches alentours."
   },
   {
     "id": 3,
     "titre": "Education du chien adulte",
     "texte": "Des séances individuelles pour t’aider à communiquer avec ton chien et retrouver de la fluidité dans votre quotidien ensemble.",
-    "tarif": "45€",
-    "heure": "/1h",
-    "icon": "sources/icons/os.svg"
+    "prix": "45€",
+    "duree": "/1h",
+    "icon": "sources/icons/os.svg",
+    "pourQui": [
+      "Chiens de plus de 8 mois.",
+      "Tu rencontres des difficultés dans ton quotidien avec ton chien ou souhaite renforcer tes acquis."
+    ],
+    "objectifs": [
+      "Cibler les problématiques spécifiques de votre binôme : marche en laisse, rappel, gestion des émotions, cohabitation à la maison,...",
+      "Retrouver une relation fluide et sereine au quotidien.",
+      "Améliorer la communication entre toi et ton chien."
+    ],
+    "comment": [
+      "Séances individuelles, adaptées à vos rythmes.",
+      "Travail en contexte réel : domicile, ville, parcs ou espaces naturels en fonction de vos besoins.",
+      "Exercices progressifs, méthodes courtes et ludiques. "
+    ],
+    "localisation": "À domicile et en extérieur selon les besoins, dans Rennes et proches alentours."
   },
   {
     "id": 4,
     "titre": "Rééducation/désensibilisation",
     "texte": "Des séances d’entrainements pour t’aider à solutionner des petits et gros couacs de comportement au quotidien.",
-    "tarif": "45€",
-    "heure": "/1h",
-    "icon": "sources/icons/puzzle.svg"
+    "prix": "45€",
+    "duree": "/1h",
+    "icon": "sources/icons/puzzle.svg",
+    "pourQui": [
+      "Chiens de tout âge.",
+      "Tu rencontres des difficultés à gérer les émotions ou certains comportements problématiques de ton chien en balade ou à la maison. "
+    ],
+    "objectifs": [
+      "Travailler sur la peur, l’anxiété, la réactivité face à d’autres chiens, les aboiements ou la protection de ressources,...",
+      "Apprendre des exercices concrets pour gérer les situations délicates sur le terrain.",
+      "Vous aider, toi et ton chien à reprendre confiance et à vivre plus sereinement."
+    ],
+    "comment": [
+      "Séances individuelles, adaptées à chaque problématique.",
+      "Travail progressif, dans des conditions sécurisées.",
+      "Mise en place d’exercices pratiques à reproduire à la maison."
+    ],
+    "localisation": "À domicile et en extérieur selon les besoins, dans Rennes et proches alentours."
   }
 ]
