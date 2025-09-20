@@ -60,6 +60,17 @@ span {
   font-size: 16px;
 }
 
+.img-bg {
+  width: 100vw;
+}
+
+#fleche {
+  position: absolute;
+  width: 100px;
+  left: 50%;
+  right: 50%;
+}
+
 header {
   background-color: #ffde45;
   .marginSite {
@@ -105,7 +116,7 @@ header {
   background-color: #ffde45;
   padding-right: 36px;
   padding-left: 36px;
-  padding-bottom: 64px;
+  padding-bottom: 40px;
   .marginSite {
     display: flex;
     align-items: center;
@@ -211,25 +222,17 @@ header {
         }
       }
     }
-    #services__tips {
-      box-shadow: 0px 0px 12px rgba(158, 158, 158, 0.25);
-      background-color: white;
-      display: flex;
-      align-items: flex-start;
-      border-radius: 30px;
-      padding: 24px;
-      gap: 16px;
-      p {
-        font-size: 16px;
-        margin: 8px 0 0 0;
-      }
-    }
   }
 }
 
+.bg-services {
+  margin-top: -300px;
+}
+
 #demarche {
+  position: relative;
   margin-top: 200px;
-  margin-bottom: 200px;
+  margin-bottom: 82px;
   padding-right: 36px;
   padding-left: 36px;
   .marginSite {
@@ -253,6 +256,7 @@ header {
       }
     }
     #demarche__liste {
+      margin-bottom: 24px;
       display: flex;
       gap: 24px;
       .demarche-card {
@@ -303,10 +307,30 @@ header {
   }
 }
 
+.bg-demarche {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  margin-top: -70px;
+}
+
+.bloc__tips {
+  box-shadow: 0px 0px 12px rgba(158, 158, 158, 0.25);
+  background-color: white;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 30px;
+  padding: 24px;
+  gap: 16px;
+  p {
+    font-size: 16px;
+    margin: 8px 0 0 0;
+  }
+}
+
 #about {
   background-color: #f9f3e8;
-  padding-right: 36px;
-  padding-left: 36px;
+  padding: 128px 36px;
   .marginSite {
     display: flex;
     align-items: center;
@@ -330,8 +354,11 @@ header {
 }
 
 #contact {
-  margin: 85px 36px;
+  background-color: #f9f3e8;
+  padding: 85px 36px;
   .marginSite {
+    background-image: url(sources/bg-os.png);
+    background-size: 100%;
     background-color: #ffbcd9;
     padding: 40px 0;
     border-radius: 30px;
@@ -367,9 +394,12 @@ header {
 }
 
 .legal {
+  background-color: #f9f3e8;
   color: #969696;
   font-size: 16px;
   padding-bottom: 32px;
-  max-width: 1440px;
-  margin: auto;
+  p {
+    max-width: 1440px;
+    margin: auto;
+  }
 }
