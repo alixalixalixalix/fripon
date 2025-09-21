@@ -58,6 +58,20 @@ span {
   border: 0px;
   font-weight: 600;
   font-size: 16px;
+  display: flex;
+  gap: 8px;
+  div {
+    background-color: white;
+    width: 23px;
+    height: 23px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    img {
+      width: 21px;
+    }
+  }
 }
 
 .img-bg {
@@ -227,12 +241,15 @@ header {
 
 .bg-services {
   margin-top: -300px;
+  position: absolute;
+  z-index: -1;
 }
 
 #demarche {
   position: relative;
-  margin-top: 200px;
+  margin-top: 136px;
   margin-bottom: 82px;
+  padding-top: 64px;
   padding-right: 36px;
   padding-left: 36px;
   .marginSite {
@@ -404,32 +421,46 @@ header {
   }
 }
 
-.modal {
-  width: 75vw;
-  background-color: aqua;
-  margin: auto;
-  border-radius: 30px;
-  .modal__intro {
-    background-color: #f9f3e8;
-    border-radius: 30px 30px 0 0px;
-    padding: 24px;
+#modal__liste {
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  .modal__card {
+    width: 50vw;
+    background-color: white;
+    margin: auto;
+    border-radius: 30px;
     display: flex;
-    justify-content: space-between;
-    h2 {
-      margin: 0px;
-    }
-  }
-  .modal__content {
-    padding: 24px;
-    .modal__content__titre {
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 24px;
+    .modal__card__intro {
+      background-color: #f9f3e8;
+      border-radius: 30px 30px 0 0px;
+      padding: 24px;
       display: flex;
-      gap: 8px;
-      h3 {
-        margin: 0;
+      justify-content: space-between;
+      h2 {
+        margin: 0px;
       }
     }
-    ul {
-      padding-left: 24px;
+    .modal__card__content {
+      padding: 0 24px;
+      div {
+        display: flex;
+        gap: 8px;
+        h3 {
+          margin: 0;
+        }
+      }
+      ul {
+        padding-left: 24px;
+        margin: 8px 0 0 0;
+      }
+      p {
+        margin: 8px 0 0 0;
+      }
     }
   }
 }
