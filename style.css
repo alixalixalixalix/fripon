@@ -52,6 +52,10 @@ span {
   font-weight: 800;
 }
 
+button {
+  cursor: pointer;
+}
+
 .boutonAction {
   padding: 10px 16px;
   border-radius: 100px;
@@ -72,6 +76,10 @@ span {
       width: 21px;
     }
   }
+}
+
+.boutonAction:hover {
+  opacity: 0.7;
 }
 
 .img-bg {
@@ -109,6 +117,9 @@ header {
           color: black;
           text-decoration: none;
         }
+        a:hover {
+          opacity: 0.7;
+        }
       }
     }
     button {
@@ -122,6 +133,9 @@ header {
         color: white;
         text-decoration: none;
       }
+    }
+    button:hover {
+      opacity: 0.7;
     }
   }
 }
@@ -307,6 +321,7 @@ header {
           font-weight: 600;
         }
         button {
+          cursor: default;
           border-radius: 50px;
           border: 0px;
           background-color: white;
@@ -414,7 +429,7 @@ header {
   background-color: #f9f3e8;
   color: #969696;
   font-size: 16px;
-  padding-bottom: 32px;
+  padding: 0 36px 32px 36px;
   p {
     max-width: 1440px;
     margin: auto;
@@ -422,10 +437,13 @@ header {
 }
 
 #modal__liste {
+  position: fixed;
+  top: 0;
+  overflow:hidden;
   background-color: rgba(0, 0, 0, 0.75);
   width: 100vw;
   height: 100vh;
-  display: flex;
+  display: none;
   .modal__card {
     width: 50vw;
     background-color: white;
@@ -443,6 +461,9 @@ header {
       justify-content: space-between;
       h2 {
         margin: 0px;
+      }
+      img {
+        cursor: pointer;
       }
     }
     .modal__card__content {
