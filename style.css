@@ -337,6 +337,13 @@ header {
       }
     }
   }
+  svg {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: -10%;
+    width: 100vw;
+  }
 }
 
 .bg-demarche {
@@ -394,33 +401,44 @@ header {
     background-color: #ffbcd9;
     padding: 40px 0;
     border-radius: 30px;
-  }
-  #contact__img {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    img {
-      max-width: 180px;
+    position: relative;
+    .morsure-gauche {
+      position: absolute;
+      top: -40%;
+      left: -7%;
     }
-    .gauche {
-      transform: rotate(-6deg);
+    .morsure-droite {
+      position: absolute;
+      bottom: -40%;
+      right: -7%;
     }
-    .droite {
-      transform: rotate(8deg);
-    }
-  }
-  h2 {
-    text-align: center;
-    margin: 24px 0px;
-  }
-  #contact__coordonnees {
-    display: flex;
-    justify-content: center;
-    gap: 48px;
-    .contact__coordonnees__tel,
-    .contact__coordonnees__mail {
+    #contact__img {
       display: flex;
-      gap: 8px;
+      justify-content: center;
+      gap: 16px;
+      img {
+        max-width: 180px;
+      }
+      .gauche {
+        transform: rotate(-6deg);
+      }
+      .droite {
+        transform: rotate(8deg);
+      }
+    }
+    h2 {
+      text-align: center;
+      margin: 24px 0px;
+    }
+    #contact__coordonnees {
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+      .contact__coordonnees__tel,
+      .contact__coordonnees__mail {
+        display: flex;
+        gap: 8px;
+      }
     }
   }
 }
@@ -439,7 +457,7 @@ header {
 #modal__liste {
   position: fixed;
   top: 0;
-  overflow:hidden;
+  overflow: hidden;
   background-color: rgba(0, 0, 0, 0.75);
   width: 100vw;
   height: 100vh;
