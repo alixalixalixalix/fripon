@@ -190,6 +190,11 @@ header {
   }
 }
 
+#divider-presentation {
+  width: 100vw;
+  margin-bottom: -5px;
+}
+
 #services {
   padding-top: 64px;
   background-color: #f9f3e8;
@@ -259,10 +264,18 @@ header {
   z-index: -1;
 }
 
+#divider-services {
+  width: 100vw;
+  position: absolute;
+  margin-top: -100px;
+  z-index: -1;
+  margin-top: -420px;
+}
+
 #demarche {
   position: relative;
   margin-top: 136px;
-  margin-bottom: 82px;
+  margin-bottom: -20px;
   padding-top: 64px;
   padding-right: 36px;
   padding-left: 36px;
@@ -341,9 +354,14 @@ header {
     position: absolute;
     z-index: -1;
     left: 0;
-    bottom: -10%;
+    bottom: -30%;
     width: 100vw;
   }
+}
+
+#divider-demarche {
+  width: 100vw;
+  margin-bottom: -5px;
 }
 
 .bg-demarche {
