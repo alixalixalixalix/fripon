@@ -180,6 +180,7 @@ header {
         left: 24px;
         top: 42px;
         transform: rotate(-7deg);
+        transition: 3s;
       }
       .droite {
         right: 48px;
@@ -475,7 +476,6 @@ header {
 #modal__liste {
   position: fixed;
   top: 0;
-  overflow: hidden;
   background-color: rgba(0, 0, 0, 0.75);
   width: 100vw;
   height: 100vh;
@@ -518,6 +518,129 @@ header {
       p {
         margin: 8px 0 0 0;
       }
+      .infoDeplacement {
+        color: #ff6d33;
+        font-style: italic;
+      }
     }
   }
+}
+
+
+
+
+@-webkit-keyframes rotating1 /* Safari and Chrome */ {
+  0% {
+    -webkit-transform: rotate(-7deg);
+    -o-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+  }
+  50% {
+    -webkit-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+    transform: rotate(9deg);
+  }
+  100% {
+    -webkit-transform: rotate(-7deg);
+    -o-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+  }
+}
+@keyframes rotating1 {
+  0% {
+    -ms-transform: rotate(-7deg);
+    -moz-transform: rotate(-7deg);
+    -webkit-transform: rotate(-7deg);
+    -o-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+  }
+  50% {
+    -ms-transform: rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -webkit-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+    transform: rotate(9deg);
+  }
+  100% {
+    -ms-transform: rotate(-7deg);
+    -moz-transform: rotate(-7deg);
+    -webkit-transform: rotate(-7deg);
+    -o-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+  }
+}
+.rotate1 {
+  -webkit-animation: rotating1 3s ease-in-out infinite;
+  -moz-animation: rotating1 3s ease-in-out infinite;
+  -ms-animation: rotating1 3s ease-in-out infinite;
+  -o-animation: rotating1 3s ease-in-out infinite;
+  animation: rotating1 3s ease-in-out infinite;
+}
+
+@keyframes fleche {
+  0% {
+    margin-top: 0px;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+
+.transi-fleche {
+  -webkit-animation: fleche 2s ease-in-out infinite; /* Safari 4+ */
+  -moz-animation: fleche 2s ease-in-out infinite; /* Fx 5+ */
+  -o-animation: fleche 2s ease-in-out infinite; /* Opera 12+ */
+  animation: fleche 2s ease-in-out infinite; /* IE 10+, Fx 29+ */
+}
+
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  0% {
+    -webkit-transform: rotate(11deg);
+    -o-transform: rotate(11deg);
+    transform: rotate(11deg);
+  }
+  50% {
+    -webkit-transform: rotate(-9deg);
+    -o-transform: rotate(-9deg);
+    transform: rotate(-9deg);
+  }
+  100% {
+    -webkit-transform: rotate(11deg);
+    -o-transform: rotate(11deg);
+    transform: rotate(11deg);
+  }
+}
+@keyframes rotating {
+  0% {
+    -ms-transform: rotate(11deg);
+    -moz-transform: rotate(11deg);
+    -webkit-transform: rotate(11deg);
+    -o-transform: rotate(11deg);
+    transform: rotate(11deg);
+  }
+  50% {
+    -ms-transform: rotate(-9deg);
+    -moz-transform: rotate(-9deg);
+    -webkit-transform: rotate(-9deg);
+    -o-transform: rotate(-9deg);
+    transform: rotate(-9deg);
+  }
+  100% {
+    -ms-transform: rotate(11deg);
+    -moz-transform: rotate(11deg);
+    -webkit-transform: rotate(11deg);
+    -o-transform: rotate(11deg);
+    transform: rotate(11deg);
+  }
+}
+.rotate2 {
+  -webkit-animation: rotating 4s ease-in-out infinite;
+  -moz-animation: rotating 4s ease-in-out infinite;
+  -ms-animation: rotating 4s ease-in-out infinite;
+  -o-animation: rotating 4s ease-in-out infinite;
+  animation: rotating 4s ease-in-out infinite;
 }

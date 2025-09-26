@@ -3,6 +3,8 @@ const fetchData = async () => {
     const reponseServices = await fetch("data-services.json");
     const dataServices = await reponseServices.json();
 
+    const html = document.documentElement;
+
     function generatorServices(dataServices) {
       const services__liste = document.querySelector("#services__liste div");
 
@@ -51,10 +53,27 @@ const fetchData = async () => {
         button.addEventListener("click", (event) => {
           const modal = document.getElementById("modal__liste");
           modal.style.display = "flex";
+          html.style.overflow = "hidden";
 
           const close = document.querySelector(".modal__card__intro img");
           close.addEventListener("click", (event) => {
             modal.style.display = "none";
+            html.style.overflow = "auto";
+          });
+
+          const handleOutsideClick = (event) => {
+            if (event.target === modal) {
+              modal.style.display = "none";
+              html.style.overflow = "auto";
+              modal.removeEventListener("click", handleOutsideClick);
+            }
+          };
+          modal.addEventListener("click", handleOutsideClick);
+
+          // Empêche la propagation des clics à l'intérieur de modal__card
+          const modalCard = document.querySelector(".modal__card");
+          modalCard.addEventListener("click", (event) => {
+            event.stopPropagation();
           });
 
           const modal__card__intro = document.querySelector(
@@ -135,6 +154,13 @@ const fetchData = async () => {
             li.innerText = dataServices[index].contentParagraphe3[j];
           }
 
+          const modal__card__paragraphe3__infoDeplacement =
+            document.querySelector(
+              ".modal__card__paragraphe3 .infoDeplacement"
+            );
+          modal__card__paragraphe3__infoDeplacement.innerText =
+            dataServices[index].infoParagraphe3;
+
           // LOCALISATION
           const modal__card__paragraphe4 = document.querySelector(
             ".modal__card__paragraphe4"
@@ -152,66 +178,7 @@ const fetchData = async () => {
       });
     }
 
-    // GÉNÉRATION MODAL
-
-    // On garde la structure dans le html
-    // On récupère dans un tableau les 4 boutons
-    // Au clic sur un "en savoir plus", on regarde quel bouton a été cliqué
-    // On maj les infos dans chaque élément html
-
-    /*
-    function generatorModal(dataServices) {
-      const modal__liste = document.querySelector("#modal__liste");
-
-      for (let i = 0; i < dataServices.length; i++) {
-        const modal__card = document.createElement("div");
-        modal__card.classList.add("modal__card");
-        modal__liste.appendChild(modal__card);
-
-        const modal__card__intro = document.createElement("div");
-        modal__card__intro.classList.add("modal__card__intro");
-        modal__card.appendChild(modal__card__intro);
-
-        const titre = document.createElement("h2");
-        modal__card__intro.appendChild(titre);
-        titre.innerText = dataServices[i].titre;
-
-        const close = document.createElement("img");
-        modal__card__intro.appendChild(close);
-        close.src = "sources/icons/close.svg";
-
-        const modal__card__content = document.createElement("div");
-        modal__card__content.classList.add("modal__card__content");
-        modal__card.appendChild(modal__card__content);
-
-        const modal__card__content__titre = document.createElement("div");
-        modal__card__content__titre.classList.add(
-          "modal__card__content__titre"
-        );
-        modal__card__content.appendChild(modal__card__content__titre);
-
-        const icon = document.createElement("img");
-        modal__card__content__titre.appendChild(icon);
-        icon.src = "dataServices[i].icon";
-
-        const pourQui = document.createElement("h3");
-        modal__card__content__titre.appendChild(pourQui);
-        pourQui.innerText = "Pour qui ?";
-
-        const listeUl = document.createElement("ul");
-        modal__card__content.appendChild(listeUl);
-
-        for (let j = 0; j < dataServices[i].pourQui.length; j++) {
-          const li = document.createElement("li");
-          listeUl.appendChild(li);
-          li.innerText = dataServices[i].pourQui[j];
-        }
-      }
-    }
-    */
-
     generatorServices(dataServices);
-    //generatorModal(dataServices);
   } catch (error) {
     console.error("Erreur lors de la récupération des données :", error);
   }
