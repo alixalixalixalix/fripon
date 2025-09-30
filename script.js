@@ -185,3 +185,24 @@ const fetchData = async () => {
 };
 
 fetchData();
+
+
+// MENU APPARITION SCROLL
+let lastScrollPosition = 0;
+let isScrolling;
+const header = document.querySelector('header');
+
+window.addEventListener('scroll', function() {
+  clearTimeout(isScrolling);
+  isScrolling = setTimeout(function() {
+    const currentScrollPosition = window.scrollY;
+
+    if (currentScrollPosition > lastScrollPosition + 25) {
+      header.style.transform = "translateY(-100%)";
+    } else if (currentScrollPosition < lastScrollPosition - 25) {
+      header.style.transform = "translateY(0)";
+    }
+
+    lastScrollPosition = currentScrollPosition;
+  }, 10);
+});

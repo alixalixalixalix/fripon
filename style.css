@@ -95,6 +95,10 @@ button {
 
 header {
   background-color: #ffde45;
+  position: fixed;
+  z-index: 1000;
+  transition: transform 0.3s ease; /* Animation fluide */
+  width: 100vw;
   .marginSite {
     display: flex;
     justify-content: space-between;
@@ -138,6 +142,13 @@ header {
       opacity: 0.7;
     }
   }
+}
+
+.fixed-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Pour s'assurer que le menu reste au-dessus des autres éléments */
 }
 
 #presentation {
@@ -526,9 +537,6 @@ header {
   }
 }
 
-
-
-
 @-webkit-keyframes rotating1 /* Safari and Chrome */ {
   0% {
     -webkit-transform: rotate(-7deg);
@@ -595,7 +603,6 @@ header {
   -o-animation: fleche 2s ease-in-out infinite; /* Opera 12+ */
   animation: fleche 2s ease-in-out infinite; /* IE 10+, Fx 29+ */
 }
-
 
 @-webkit-keyframes rotating /* Safari and Chrome */ {
   0% {
