@@ -1,36 +1,8 @@
 [
   {
     "id": 1,
-    "titre": "Promenades au grand air",
-    "texte": "Des sorties 100% plaisir en ton absence, pour explorer et interagir avec son environnement, sans contraintes éducatives.",
-    "prix": "32€",
-    "duree": "/2h",
-    "icon": "sources/icons/trefle.svg",
-    "titreParagraphe1": "Pour qui ?",
-    "contentParagraphe1": [
-      "Chiens de tout âge ayant besoin de se dépenser et de varier leurs sorties.",
-      "Idéal si tu manques de temps ou si ton chien est très énergique."
-    ],
-    "titreParagraphe2": "Objectifs",
-    "contentParagraphe2": [
-      "Apporter la stimulation physique et mentale dont ton chien à besoin en ton absence",
-      "Renforcer son bien-être grâce à des sorties riches en exploration, en interactions et en découvertes.",
-      "Maintenir et entretenir des interactions sociales équilibrées en petits groupes."
-    ],
-    "titreParagraphe3": "Comment ça marche ?",
-    "contentParagraphe3": [
-      "Je viens chercher ton chien à domicile (Rennes et alentours).",
-      "Sortie de 2h en petit groupe ou en individuel selon ses besoins.",
-      "Retour à la maison après une balade riche et sécurisée."
-    ],
-    "infoParagraphe3": "👉 Des frais de déplacement sont appliqués au-délà de 10 km autour de Rennes.",
-    "titreParagraphe4": "Localisation",
-    "contentParagraphe4": "Forêts, parcs, chemins de campagne et espaces naturels autour et dans Rennes."
-  },
-  {
-    "id": 2,
     "titre": "Education du chiot (- de 8 mois)",
-    "texte": "Des séances individuelles pour offrir les bonnes bases à ton chiot, t’aider à le comprendre et construire une relation de confiance avec toi.",
+    "texte": "Des séances individuelles pour offrir les bonnes bases à ton chiot, t’aider à le comprendre et à construire une relation de confiance avec toi.",
     "prix": "40€",
     "duree": "/1h",
     "icon": "sources/icons/patte.svg",
@@ -56,7 +28,7 @@
     "contentParagraphe4": "À domicile et en extérieur selon les besoins, dans Rennes et proches alentours."
   },
   {
-    "id": 3,
+    "id": 2,
     "titre": "Education du chien adulte",
     "texte": "Des séances individuelles pour t’aider à communiquer avec ton chien et retrouver de la fluidité dans votre quotidien ensemble.",
     "prix": "45€",
@@ -84,9 +56,9 @@
     "contentParagraphe4": "À domicile et en extérieur selon les besoins, dans Rennes et proches alentours."
   },
   {
-    "id": 4,
+    "id": 3,
     "titre": "Rééducation/désensibilisation",
-    "texte": "Des séances d’entrainements pour t’aider à solutionner des petits et gros couacs de comportement au quotidien.",
+    "texte": "Des séances d’entrainements sur des problématiques spécifiques pour t’aider à solutionner des petits et gros couacs de comportement du quotidien.",
     "prix": "45€",
     "duree": "/1h",
     "icon": "sources/icons/puzzle.svg",
@@ -110,5 +82,33 @@
     "infoParagraphe3": "👉 Des frais de déplacement sont appliqués au-délà de 10 km autour de Rennes.",
     "titreParagraphe4": "Localisation",
     "contentParagraphe4": "À domicile et en extérieur selon les besoins, dans Rennes et proches alentours."
+  },
+  {
+    "id": 4,
+    "titre": "Visites à domicile et promenades",
+    "texte": "Pour remplacer temporairement ta présence… sans bousculer son rythme. Je me déplace à ton domicile et je m’occupe de ton chien en répondant à ses différents besoins en ton absence. ",
+    "prix": "",
+    "duree": "",
+    "icon": "sources/icons/trefle.svg",
+    "titreParagraphe1": "Pour qui ?",
+    "contentParagraphe1": [
+      "Chiens de tout âge ayant besoin de se dépenser et de varier leurs sorties.",
+      "Idéal si tu manques de temps ou si ton chien est très énergique."
+    ],
+    "titreParagraphe2": "Objectifs",
+    "contentParagraphe2": [
+      "Apporter la stimulation physique et mentale dont ton chien à besoin en ton absence",
+      "Renforcer son bien-être grâce à des sorties riches en exploration, en interactions et en découvertes.",
+      "Maintenir et entretenir des interactions sociales équilibrées en petits groupes."
+    ],
+    "titreParagraphe3": "Comment ça marche ?",
+    "contentParagraphe3": [
+      "Je viens chercher ton chien à domicile (Rennes et alentours).",
+      "Sortie de 2h en petit groupe ou en individuel selon ses besoins.",
+      "Retour à la maison après une balade riche et sécurisée."
+    ],
+    "infoParagraphe3": "👉 Des frais de déplacement sont appliqués au-délà de 10 km autour de Rennes.",
+    "titreParagraphe4": "Localisation",
+    "contentParagraphe4": "Forêts, parcs, chemins de campagne et espaces naturels autour et dans Rennes."
   }
 ]

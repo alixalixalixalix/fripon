@@ -25,6 +25,10 @@ main {
 
 h1 {
   font-size: 48px;
+  @media (max-width: 600px) {
+    font-size: 40px;
+    line-height: 46px;
+  }
 }
 h2 {
   font-size: 36px;
@@ -36,6 +40,9 @@ h4 {
   font-size: 24px;
   font-weight: 600;
   margin: 0;
+  @media (max-width: 600px) {
+    font-size: 18px;
+  }
 }
 h5 {
   font-size: 18px;
@@ -84,13 +91,6 @@ button {
 
 .img-bg {
   width: 100vw;
-}
-
-#fleche {
-  position: absolute;
-  width: 100px;
-  left: 50%;
-  right: 50%;
 }
 
 header {
@@ -142,6 +142,9 @@ header {
       opacity: 0.7;
     }
   }
+  @media (max-width: 600px) {
+    display: none;
+  }
 }
 
 .fixed-menu {
@@ -162,6 +165,9 @@ header {
     align-items: center;
     #presentation__txt {
       width: 50%;
+      @media (max-width: 600px) {
+        width: 100%;
+      }
       h1 {
         margin: 0;
       }
@@ -199,6 +205,9 @@ header {
         bottom: 42px;
         transform: rotate(11deg);
       }
+      @media (max-width: 600px) {
+        display: none;
+      }
     }
   }
 }
@@ -206,6 +215,13 @@ header {
 #divider-presentation {
   width: 100vw;
   margin-bottom: -5px;
+}
+
+#fleche {
+  position: absolute;
+  width: 100px;
+  left: 50%;
+  right: 50%;
 }
 
 #services {
@@ -216,8 +232,11 @@ header {
   .marginSite {
     display: flex;
     gap: 48px;
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
     #services__intro {
-      max-width: 360px;
+      min-width: 360px;
       h2 {
         margin: 0 0 12px 0;
       }
@@ -234,6 +253,10 @@ header {
         display: flex;
         align-items: flex-start;
         gap: 32px;
+        @media (max-width: 600px) {
+          flex-direction: column;
+          gap: 16px;
+        }
         img {
           width: 50px;
         }
@@ -261,6 +284,10 @@ header {
           justify-content: end;
           gap: 8px;
           text-align: right;
+          @media (max-width: 600px) {
+            text-align: left;
+            justify-content: start;
+          }
           h4 {
             font-size: 18px;
             font-weight: 400;
@@ -279,16 +306,14 @@ header {
 
 #divider-services {
   width: 100vw;
-  position: absolute;
-  margin-top: -100px;
-  z-index: -1;
   margin-top: -420px;
+  left: 0;
 }
 
 #demarche {
   position: relative;
   margin-top: 136px;
-  margin-bottom: -20px;
+  margin-bottom: 150px;
   padding-top: 64px;
   padding-right: 36px;
   padding-left: 36px;
@@ -299,6 +324,9 @@ header {
       flex-direction: column;
       width: 50%;
       margin: auto;
+      @media (max-width: 600px) {
+        width: 100%;
+      }
       h2,
       p {
         text-align: center;
@@ -316,11 +344,19 @@ header {
       margin-bottom: 24px;
       display: flex;
       gap: 24px;
+      @media (max-width: 600px) {
+        flex-direction: column;
+        margin-bottom: 0px;
+      }
       .demarche-card {
         background-color: #f9f3e8;
         border-radius: 20px;
         padding: 24px;
         width: 33%;
+        @media (max-width: 600px) {
+          width: 100%;
+          margin-bottom: 36px;
+        }
         .demarche-card-num {
           display: flex;
           justify-content: center;
@@ -396,17 +432,29 @@ header {
     font-size: 16px;
     margin: 8px 0 0 0;
   }
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
 }
 
 #about {
   background-color: #f9f3e8;
   padding: 128px 36px;
+  @media (max-width: 600px) {
+    padding: 80px 36px;
+  }
   .marginSite {
     display: flex;
     align-items: center;
     gap: 24px;
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
     #about__img {
       width: 50%;
+      @media (max-width: 600px) {
+        width: 100%;
+      }
       img {
         width: 100%;
         max-width: 650px;
@@ -415,6 +463,9 @@ header {
     #about__txt {
       max-width: 550px;
       width: 50%;
+      @media (max-width: 600px) {
+        width: 100%;
+      }
       button {
         background-color: #ffde45;
         margin-top: 16px;
@@ -426,6 +477,9 @@ header {
 #contact {
   background-color: #f9f3e8;
   padding: 85px 36px;
+  @media (max-width: 600px) {
+    padding: 0px 36px 56px 36px;
+  }
   .marginSite {
     background-image: url(sources/bg-os.png);
     background-size: 100%;
@@ -437,17 +491,26 @@ header {
       position: absolute;
       top: -40%;
       left: -7%;
+      @media (max-width: 600px) {
+        display: none;
+      }
     }
     .morsure-droite {
       position: absolute;
       bottom: -40%;
       right: -7%;
+      @media (max-width: 600px) {
+        display: none;
+      }
     }
     #contact__img {
       display: flex;
       justify-content: center;
       gap: 16px;
       img {
+        max-width: 180px;
+      }
+      + img {
         max-width: 180px;
       }
       .gauche {
@@ -460,15 +523,24 @@ header {
     h2 {
       text-align: center;
       margin: 24px 0px;
+      @media (max-width: 600px) {
+        font-size: 24px;
+      }
     }
     #contact__coordonnees {
       display: flex;
       justify-content: center;
       gap: 48px;
+      @media (max-width: 600px) {
+        gap: 8px;
+        flex-direction: column;
+        align-items: center;
+      }
       .contact__coordonnees__tel,
       .contact__coordonnees__mail {
         display: flex;
         gap: 8px;
+        align-items: center;
       }
     }
   }
