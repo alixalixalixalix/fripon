@@ -47,6 +47,11 @@ const fetchData = async () => {
         const duree = document.createElement("h4");
         services__card__tarifs.appendChild(duree);
         duree.innerText = dataServices[i].duree;
+
+        const button__resp = document.createElement("button");
+        services__card.appendChild(button__resp);
+        button__resp.innerText = "En savoir plus";
+        allButtons.push(button__resp);
       }
 
       allButtons.forEach((button, index) => {
@@ -77,21 +82,21 @@ const fetchData = async () => {
           });
 
           const modal__card__intro = document.querySelector(
-            ".modal__card__intro h2"
+            ".modal__card__intro h2",
           );
           modal__card__intro.innerText = dataServices[index].titre;
 
           // POUR QUI
           const modal__card__paragraphe1 = document.querySelector(
-            ".modal__card__paragraphe1"
+            ".modal__card__paragraphe1",
           );
           const modal__card__paragraphe1__titre = document.querySelector(
-            ".modal__card__paragraphe1 div h3"
+            ".modal__card__paragraphe1 div h3",
           );
           modal__card__paragraphe1__titre.innerText =
             dataServices[index].titreParagraphe1;
           const listeUl__1 = document.querySelector(
-            ".modal__card__paragraphe1 ul"
+            ".modal__card__paragraphe1 ul",
           );
           listeUl__1.innerHTML = "";
 
@@ -107,16 +112,16 @@ const fetchData = async () => {
 
           // OBJECTIFS
           const modal__card__paragraphe2 = document.querySelector(
-            ".modal__card__paragraphe2"
+            ".modal__card__paragraphe2",
           );
           const modal__card__paragraphe2__titre = document.querySelector(
-            ".modal__card__paragraphe2 div h3"
+            ".modal__card__paragraphe2 div h3",
           );
           modal__card__paragraphe2__titre.innerText =
             dataServices[index].titreParagraphe2;
 
           const listeUl__2 = document.querySelector(
-            ".modal__card__paragraphe2 ul"
+            ".modal__card__paragraphe2 ul",
           );
           listeUl__2.innerHTML = "";
 
@@ -132,15 +137,15 @@ const fetchData = async () => {
 
           // COMMENT ÇA MARCHE
           const modal__card__paragraphe3 = document.querySelector(
-            ".modal__card__paragraphe3"
+            ".modal__card__paragraphe3",
           );
           const modal__card__paragraphe3__titre = document.querySelector(
-            ".modal__card__paragraphe3 div h3"
+            ".modal__card__paragraphe3 div h3",
           );
           modal__card__paragraphe3__titre.innerText =
             dataServices[index].titreParagraphe3;
           const listeUl__3 = document.querySelector(
-            ".modal__card__paragraphe3 ul"
+            ".modal__card__paragraphe3 ul",
           );
           listeUl__3.innerHTML = "";
 
@@ -156,22 +161,22 @@ const fetchData = async () => {
 
           const modal__card__paragraphe3__infoDeplacement =
             document.querySelector(
-              ".modal__card__paragraphe3 .infoDeplacement"
+              ".modal__card__paragraphe3 .infoDeplacement",
             );
           modal__card__paragraphe3__infoDeplacement.innerText =
             dataServices[index].infoParagraphe3;
 
           // LOCALISATION
           const modal__card__paragraphe4 = document.querySelector(
-            ".modal__card__paragraphe4"
+            ".modal__card__paragraphe4",
           );
           const modal__card__paragraphe4__titre = document.querySelector(
-            ".modal__card__paragraphe4 div h3"
+            ".modal__card__paragraphe4 div h3",
           );
           modal__card__paragraphe4__titre.innerText =
             dataServices[index].titreParagraphe4;
           const pLocalisation = document.querySelector(
-            ".modal__card__paragraphe4 p"
+            ".modal__card__paragraphe4 p",
           );
           pLocalisation.innerText = dataServices[index].contentParagraphe4;
         });
@@ -185,16 +190,24 @@ const fetchData = async () => {
 };
 
 fetchData();
+/*
+// MENU
+let openMenu = document.getElementById("#menu__mobile");
+let menu = document.getElementById("menu");
 
+openMenu.addEventListener("click", function {
+  menu.style.display = "flex"
+})
+*/
 
-// MENU APPARITION SCROLL
+// HEADER APPARITION SCROLL
 let lastScrollPosition = 0;
 let isScrolling;
-const header = document.querySelector('header');
+const header = document.querySelector("header");
 
-window.addEventListener('scroll', function() {
+window.addEventListener("scroll", function () {
   clearTimeout(isScrolling);
-  isScrolling = setTimeout(function() {
+  isScrolling = setTimeout(function () {
     const currentScrollPosition = window.scrollY;
 
     if (currentScrollPosition > lastScrollPosition + 25) {

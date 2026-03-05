@@ -105,6 +105,12 @@ header {
     align-items: center;
     gap: 48px;
     padding: 32px 36px;
+    @media (max-width: 600px) {
+      padding: 24px 24px;
+      li {
+        display: none;
+      }
+    }
     ul {
       margin: 0;
       display: flex;
@@ -137,13 +143,26 @@ header {
         color: white;
         text-decoration: none;
       }
+      @media (max-width: 600px) {
+        display: none;
+      }
     }
     button:hover {
       opacity: 0.7;
     }
-  }
-  @media (max-width: 600px) {
-    display: none;
+    #menu__mobile {
+      display: none;
+      flex-direction: column;
+      gap: 8px;
+      div {
+        width: 18px;
+        height: 2px;
+        background-color: black;
+      }
+      @media (max-width: 600px) {
+        display: flex;
+      }
+    }
   }
 }
 
@@ -160,6 +179,9 @@ header {
   padding-left: 36px;
   padding-bottom: 40px;
   padding-top: 120px;
+  @media (max-width: 600px) {
+    padding: 180px 24px 56px 24px;
+  }
   .marginSite {
     display: flex;
     align-items: center;
@@ -173,7 +195,7 @@ header {
       }
       p {
         max-width: 550px;
-        margin: 16px 0 16px 0;
+        margin: 24px 0 24px 0;
         font-size: 18px;
         line-height: 26px;
       }
@@ -215,6 +237,18 @@ header {
 #divider-presentation {
   width: 100vw;
   margin-bottom: -5px;
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+#divider-presentation-mobile {
+  display: none;
+  width: 100vw;
+  margin-bottom: -5px;
+  @media (max-width: 600px) {
+    display: flex;
+  }
 }
 
 #fleche {
@@ -222,6 +256,11 @@ header {
   width: 100px;
   left: 50%;
   right: 50%;
+  margin-top: 10px;
+  @media (max-width: 600px) {
+    width: 70px;
+    left: 40%;
+  }
 }
 
 #services {
@@ -229,14 +268,23 @@ header {
   background-color: #f9f3e8;
   padding-right: 36px;
   padding-left: 36px;
+  @media (max-width: 600px) {
+    padding-top: 80px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
   .marginSite {
     display: flex;
     gap: 48px;
     @media (max-width: 600px) {
       flex-direction: column;
+      gap: 56px;
     }
     #services__intro {
       min-width: 360px;
+      @media (max-width: 600px) {
+        min-width: 1px;
+      }
       h2 {
         margin: 0 0 12px 0;
       }
@@ -268,12 +316,13 @@ header {
             display: flex;
             gap: 16px;
           }
-          button {
-            background-color: #f9f3e8;
-            border: 0px;
-            padding: 0;
-            text-decoration: underline;
-            font-size: 16px;
+          @media (max-width: 600px) {
+            p {
+              margin-bottom: 0px;
+            }
+            button {
+              display: none;
+            }
           }
         }
         .services__card__tarifs {
@@ -291,6 +340,19 @@ header {
           h4 {
             font-size: 18px;
             font-weight: 400;
+          }
+        }
+        button {
+          background-color: #f9f3e8;
+          border: 0px;
+          padding: 0;
+          text-decoration: underline;
+          font-size: 16px;
+        }
+        > button {
+          display: none;
+          @media (max-width: 600px) {
+            display: flex;
           }
         }
       }
@@ -317,6 +379,11 @@ header {
   padding-top: 64px;
   padding-right: 36px;
   padding-left: 36px;
+  @media (max-width: 600px) {
+    padding-right: 24px;
+    padding-left: 24px;
+    margin-bottom: 48px;
+  }
   .marginSite {
     #demarche__intro {
       padding-bottom: 64px;
@@ -354,8 +421,8 @@ header {
         padding: 24px;
         width: 33%;
         @media (max-width: 600px) {
-          width: 100%;
-          margin-bottom: 36px;
+          width: auto;
+          margin-bottom: 24px;
         }
         .demarche-card-num {
           display: flex;
@@ -441,7 +508,7 @@ header {
   background-color: #f9f3e8;
   padding: 128px 36px;
   @media (max-width: 600px) {
-    padding: 80px 36px;
+    padding: 48px 24px 80px 24px;
   }
   .marginSite {
     display: flex;
@@ -465,6 +532,9 @@ header {
       width: 50%;
       @media (max-width: 600px) {
         width: 100%;
+        h2 {
+          margin: 0;
+        }
       }
       button {
         background-color: #ffde45;
@@ -478,7 +548,7 @@ header {
   background-color: #f9f3e8;
   padding: 85px 36px;
   @media (max-width: 600px) {
-    padding: 0px 36px 56px 36px;
+    padding: 0px 24px 56px 24px;
   }
   .marginSite {
     background-image: url(sources/bg-os.png);
@@ -510,14 +580,16 @@ header {
       img {
         max-width: 180px;
       }
-      + img {
-        max-width: 180px;
-      }
       .gauche {
         transform: rotate(-6deg);
       }
       .droite {
         transform: rotate(8deg);
+      }
+      .wouf:nth-child(2) {
+        @media (max-width: 600px) {
+          display: none;
+        }
       }
     }
     h2 {
@@ -536,11 +608,12 @@ header {
         flex-direction: column;
         align-items: center;
       }
-      .contact__coordonnees__tel,
-      .contact__coordonnees__mail {
+      .contact__coordonnees__link a {
         display: flex;
         gap: 8px;
         align-items: center;
+        color: black;
+        text-decoration: none;
       }
     }
   }
@@ -551,9 +624,41 @@ header {
   color: #969696;
   font-size: 16px;
   padding: 0 36px 32px 36px;
+  @media (max-width: 600px) {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
   p {
     max-width: 1440px;
     margin: auto;
+  }
+}
+
+#menu {
+  position: fixed;
+  display: none;
+  top: 0;
+  background-color: #f9f3e8;
+  height: 100vh;
+  #menu__liens {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    h2 {
+      margin: 0;
+    }
+  }
+  #menu__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    .menu__contact__item {
+      display: flex;
+      gap: 8px;
+      h3 {
+        margin: 0;
+      }
+    }
   }
 }
 
