@@ -190,20 +190,40 @@ const fetchData = async () => {
 };
 
 fetchData();
-/*
-// MENU
-let openMenu = document.getElementById("#menu__mobile");
-let menu = document.getElementById("menu");
 
-openMenu.addEventListener("click", function {
-  menu.style.display = "flex"
-})
-*/
+// MENU APPARITION
+const openMenu = document.getElementById("menu__open");
+const menu = document.getElementById("menu");
+const html = document.documentElement;
+const header = document.querySelector("header");
+const burger1 = document.querySelector("#menu__open > div:nth-child(1)");
+const burger2 = document.querySelector("#menu__open > div:nth-child(2)");
+
+openMenu.addEventListener("click", () => {
+  if (menu.style.display === "none") {
+    menu.style.display = "flex";
+    html.style.overflow = "hidden";
+    header.style.backgroundColor = "#f9f3e8";
+    openMenu.style.paddingRight = "18px";
+    burger1.style.transform = "rotate(45deg)";
+    burger2.style.transform = "rotate(135deg)";
+    burger1.style.position = "absolute";
+    burger2.style.position = "absolute";
+  } else {
+    menu.style.display = "none";
+    html.style.overflow = "auto";
+    openMenu.style.paddingRight = "0px";
+    header.style.backgroundColor = "#ffde45";
+    burger1.style.transform = "rotate(0deg)";
+    burger2.style.transform = "rotate(0deg)";
+    burger1.style.position = "relative";
+    burger2.style.position = "relative";
+  }
+});
 
 // HEADER APPARITION SCROLL
 let lastScrollPosition = 0;
 let isScrolling;
-const header = document.querySelector("header");
 
 window.addEventListener("scroll", function () {
   clearTimeout(isScrolling);

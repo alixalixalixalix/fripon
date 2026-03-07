@@ -150,7 +150,7 @@ header {
     button:hover {
       opacity: 0.7;
     }
-    #menu__mobile {
+    #menu__open {
       display: none;
       flex-direction: column;
       gap: 8px;
@@ -635,26 +635,47 @@ header {
 }
 
 #menu {
-  position: fixed;
+  position: absolute;
   display: none;
   top: 0;
   background-color: #f9f3e8;
   height: 100vh;
+  width: 100vw;
+  .marginSite {
+    margin: 0;
+  }
   #menu__liens {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    padding: 156px 24px 24px 24px;
+    a {
+      color: black;
+      text-decoration: none;
+    }
     h2 {
       margin: 0;
+      font-size: 32px;
     }
   }
   #menu__contact {
+    background-color: #ffde45;
+    position: absolute;
+    bottom: 0;
+    #divider-presentation-mobile {
+      transform: rotate(180deg);
+    }
+  }
+  #menu__contact__liens {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    .menu__contact__item {
+    padding: 48px 24px 32px 24px;
+    .menu__contact__liens__item a {
       display: flex;
       gap: 8px;
+      color: black;
+      text-decoration: none;
       h3 {
         margin: 0;
       }
