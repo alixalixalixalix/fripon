@@ -198,9 +198,13 @@ const html = document.documentElement;
 const header = document.querySelector("header");
 const burger1 = document.querySelector("#menu__open > div:nth-child(1)");
 const burger2 = document.querySelector("#menu__open > div:nth-child(2)");
+const h2 = document.querySelectorAll("#menu h2");
+
+let open = false;
 
 openMenu.addEventListener("click", () => {
-  if (menu.style.display === "none") {
+  const currentDisplay = window.getComputedStyle(menu).display;
+  if (currentDisplay === "none") {
     menu.style.display = "flex";
     html.style.overflow = "hidden";
     header.style.backgroundColor = "#f9f3e8";
@@ -220,6 +224,20 @@ openMenu.addEventListener("click", () => {
     burger2.style.position = "relative";
   }
 });
+/*
+h2s.forEach((h2) => {
+  h2.addEventListener("click", () => {
+    menu.style.display = "none";
+    html.style.overflow = "auto";
+    openMenu.style.paddingRight = "0px";
+    header.style.backgroundColor = "#ffde45";
+    burger1.style.transform = "rotate(0deg)";
+    burger2.style.transform = "rotate(0deg)";
+    burger1.style.position = "relative";
+    burger2.style.position = "relative";
+  });
+});
+*/
 
 // HEADER APPARITION SCROLL
 let lastScrollPosition = 0;

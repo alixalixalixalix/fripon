@@ -199,9 +199,16 @@ header {
         font-size: 18px;
         line-height: 26px;
       }
+
       button {
         background-color: black;
         color: white;
+        a {
+          text-decoration: none;
+          color: white;
+          display: flex;
+          gap: 8px;
+        }
       }
     }
     #presentation__img {
@@ -295,21 +302,24 @@ header {
     #services__liste {
       display: flex;
       flex-direction: column;
+      > div {
+        margin-bottom: 36px;
+      }
       .services__card {
         border-top: 3px dashed black;
         padding: 36px 0px;
         display: flex;
         align-items: flex-start;
         gap: 32px;
-        @media (max-width: 600px) {
-          flex-direction: column;
-          gap: 16px;
-        }
         img {
           width: 50px;
         }
         h3 {
           margin: 0;
+        }
+        @media (max-width: 600px) {
+          flex-direction: column;
+          gap: 16px;
         }
         .services__card__txt {
           p {
@@ -326,8 +336,9 @@ header {
           }
         }
         .services__card__tarifs {
-          min-width: 100px;
-          color: #ff6d33;
+          /*min-width: 100px;*/
+          color: black;
+          background-color: #ff6d33;
           display: flex;
           align-items: center;
           justify-content: end;
@@ -354,6 +365,12 @@ header {
           @media (max-width: 600px) {
             display: flex;
           }
+        }
+      }
+      .services__card:nth-child(4) {
+        border-bottom: 3px dashed black;
+        .services__card__tarifs {
+          display: none;
         }
       }
     }
@@ -539,6 +556,12 @@ header {
       button {
         background-color: #ffde45;
         margin-top: 16px;
+        a {
+          text-decoration: none;
+          color: black;
+          display: flex;
+          gap: 8px;
+        }
       }
     }
   }
@@ -680,11 +703,21 @@ header {
         margin: 0;
       }
     }
+    .menu__contact__liens__item:nth-child(1) {
+      display: flex;
+      gap: 8px;
+      color: black;
+      text-decoration: none;
+      h3 {
+        margin: 0;
+      }
+    }
   }
 }
 
 #modal__liste {
   position: fixed;
+  z-index: 100000;
   top: 0;
   background-color: rgba(0, 0, 0, 0.75);
   width: 100vw;
