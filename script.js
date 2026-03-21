@@ -12,7 +12,7 @@ const fetchData = async () => {
       // GÉNÉRATION SERVICES
       for (let i = 0; i < dataServices.length; i++) {
         const services__card = document.createElement("div");
-        services__card.classList.add("services__card");
+        services__card.classList.add("blocListe__card");
         services__liste.appendChild(services__card);
 
         const icon = document.createElement("img");
