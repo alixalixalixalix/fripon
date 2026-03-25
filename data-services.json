@@ -3,112 +3,204 @@
     "id": 1,
     "titre": "Education du chiot (- de 8 mois)",
     "texte": "Des séances individuelles pour offrir les bonnes bases à ton chiot, t’aider à le comprendre et à construire une relation de confiance avec toi.",
+    "intro": "Je me déplace à ton domicile et je m’occupe de ton chien en répondant à ses différents besoins en ton absence. ",
     "prix": "40€",
     "duree": "/1h",
     "icon": "sources/icons/patte.svg",
-    "titreParagraphe1": "Pour qui ?",
-    "contentParagraphe1": [
+    "titreItem1": "Pour qui ?",
+    "contentItem1": [
       "Chiots de moins de 8 mois.",
       "Tu souhaites partir sur de bonnes bases dès l’arrivée de ton chiot."
     ],
-    "titreParagraphe2": "Objectifs",
-    "contentParagraphe2": [
+    "titreItem2": "Objectifs",
+    "introItem2": "",
+    "contentItem2": [
       "Apprendre les bases : propreté, autonomie, mordillements, gestion des émotions, bases éducatives (marche en laisse, rappel,...)",
       "L’aider à bien grandir dans différents environnements.",
       "Comprendre ton chiot et créer une relation de confiance avec lui."
     ],
-    "titreParagraphe3": "Comment ça marche ?",
-    "contentParagraphe3": [
+    "titreItem3": "Comment ça marche ?",
+    "contentItem3": [
       "Séances individuelles, adaptées à vos rythmes.",
       "Travail à domicile pour les bases du quotidien ou en extérieur pour la socialisation.",
       "Méthodes positives, courtes et ludiques."
     ],
     "infoParagraphe3": "👉 Des frais de déplacement sont appliqués au-délà de 10 km autour de Rennes.",
-    "titreParagraphe4": "Localisation",
-    "contentParagraphe4": "À domicile et en extérieur selon les besoins, dans Rennes et proches alentours."
+    "titreItem4": "Localisation",
+    "contentItem4": "À domicile et en extérieur selon les besoins, dans Rennes et proches alentours.",
+    "titreItem5": "Tarifs",
+    "contentTableau": [
+      "Service",
+      "Durée",
+      "Tarif",
+      "1er rendez-vous éducation",
+      "1h",
+      "50,00€",
+      "Suivi chien adulte",
+      "1h",
+      "40,00€",
+      "Pack 5 séances",
+      "1h/séance",
+      "190€",
+      "Pack 10 séances",
+      "1h/séance",
+      "360€"
+    ],
+    "contentItem5": [
+      "Pour les séances d’éducation canine, le règlement est demandé à l’avance afin de réserver votre créneau et préparer au mieux notre travail ensemble."
+    ]
   },
   {
     "id": 2,
     "titre": "Education du chien adulte",
     "texte": "Des séances individuelles pour t’aider à communiquer avec ton chien et retrouver de la fluidité dans votre quotidien ensemble.",
+    "intro": "Je me déplace à ton domicile et je m’occupe de ton chien en répondant à ses différents besoins en ton absence. ",
     "prix": "45€",
     "duree": "/1h",
     "icon": "sources/icons/os.svg",
-    "titreParagraphe1": "Pour qui ?",
-    "contentParagraphe1": [
+    "titreItem1": "Pour qui ?",
+    "contentItem1": [
       "Chiens de plus de 8 mois.",
       "Tu rencontres des difficultés dans ton quotidien avec ton chien ou souhaite renforcer tes acquis."
     ],
-    "titreParagraphe2": "Objectifs",
-    "contentParagraphe2": [
+    "titreItem2": "Objectifs",
+    "introItem2": "",
+    "contentItem2": [
       "Cibler les problématiques spécifiques de votre binôme : marche en laisse, rappel, gestion des émotions, cohabitation à la maison,...",
       "Retrouver une relation fluide et sereine au quotidien.",
       "Améliorer la communication entre toi et ton chien."
     ],
-    "titreParagraphe3": "Comment ça marche ?",
-    "contentParagraphe3": [
+    "titreItem3": "Comment ça marche ?",
+    "contentItem3": [
       "Séances individuelles, adaptées à vos rythmes.",
       "Travail en contexte réel : domicile, ville, parcs ou espaces naturels en fonction de vos besoins.",
       "Exercices progressifs, méthodes courtes et ludiques. "
     ],
     "infoParagraphe3": "👉 Des frais de déplacement sont appliqués au-délà de 10 km autour de Rennes.",
-    "titreParagraphe4": "Localisation",
-    "contentParagraphe4": "À domicile et en extérieur selon les besoins, dans Rennes et proches alentours."
+    "titreItem4": "Localisation",
+    "contentItem4": "À domicile et en extérieur selon les besoins, dans Rennes et proches alentours.",
+    "titreItem5": "Tarifs",
+    "contentTableau": [
+      "Service",
+      "Durée",
+      "Tarif",
+      "1er rendez-vous éducation",
+      "1h",
+      "50,00€",
+      "Séance suivi chiot",
+      "1h",
+      "45,00€",
+      "Pack 5 séances",
+      "1h/séance",
+      "210€",
+      "Pack 10 séances",
+      "1h/séance",
+      "400€"
+    ],
+    "contentItem5": [
+      "Pour les séances d’éducation canine, le règlement est demandé à l’avance afin de réserver votre créneau et préparer au mieux notre travail ensemble."
+    ]
   },
   {
     "id": 3,
     "titre": "Rééducation / désensibilisation",
     "texte": "Des séances d’entrainements sur des problématiques spécifiques pour t’aider à solutionner des petits et gros couacs de comportement du quotidien.",
+    "intro": "Je me déplace à ton domicile et je m’occupe de ton chien en répondant à ses différents besoins en ton absence. ",
     "prix": "45€",
     "duree": "/1h",
     "icon": "sources/icons/puzzle.svg",
-    "titreParagraphe1": "Pour qui ?",
-    "contentParagraphe1": [
+    "titreItem1": "Pour qui ?",
+    "contentItem1": [
       "Chiens de tout âge.",
       "Tu rencontres des difficultés à gérer les émotions ou certains comportements problématiques de ton chien en balade ou à la maison. "
     ],
-    "titreParagraphe2": "Objectifs",
-    "contentParagraphe2": [
+    "titreItem2": "Objectifs",
+    "introItem2": "",
+    "contentItem2": [
       "Travailler sur la peur, l’anxiété, la réactivité face à d’autres chiens, les aboiements ou la protection de ressources,...",
       "Apprendre des exercices concrets pour gérer les situations délicates sur le terrain.",
       "Vous aider, toi et ton chien à reprendre confiance et à vivre plus sereinement."
     ],
-    "titreParagraphe3": "Comment ça marche ?",
-    "contentParagraphe3": [
+    "titreItem3": "Comment ça marche ?",
+    "contentItem3": [
       "Séances individuelles, adaptées à chaque problématique.",
       "Travail progressif, dans des conditions sécurisées.",
       "Mise en place d’exercices pratiques à reproduire à la maison."
     ],
     "infoParagraphe3": "👉 Des frais de déplacement sont appliqués au-délà de 10 km autour de Rennes.",
-    "titreParagraphe4": "Localisation",
-    "contentParagraphe4": "À domicile et en extérieur selon les besoins, dans Rennes et proches alentours."
+    "titreItem4": "Localisation",
+    "contentItem4": "À domicile et en extérieur selon les besoins, dans Rennes et proches alentours.",
+    "titreItem5": "Tarifs",
+    "contentTableau": [
+      "Service",
+      "Durée",
+      "Tarif",
+      "1er rendez-vous éducation",
+      "1h",
+      "50,00€",
+      "Séance suivi chiot",
+      "1h",
+      "45,00€",
+      "Pack 5 séances",
+      "1h/séance",
+      "210€",
+      "Pack 10 séances",
+      "1h/séance",
+      "400€"
+    ],
+    "contentItem5": [
+      "Pour les séances de rééducation, le règlement est demandé à l’avance afin de réserver votre créneau et préparer au mieux notre travail ensemble."
+    ]
   },
   {
     "id": 4,
     "titre": "Visites à domicile et promenades",
     "texte": "Pour remplacer temporairement ta présence… sans bousculer son rythme. Je me déplace à ton domicile et je m’occupe de ton chien en répondant à ses différents besoins en ton absence. ",
+    "intro": "Je me déplace à ton domicile et je m’occupe de ton chien en répondant à ses différents besoins en ton absence. ",
     "prix": "",
     "duree": "",
     "icon": "sources/icons/trefle.svg",
-    "titreParagraphe1": "Pour qui ?",
-    "contentParagraphe1": [
+    "titreItem1": "Pour qui ?",
+    "contentItem1": [
       "Chiens de tout âge ayant besoin de se dépenser et de varier leurs sorties.",
       "Idéal si tu manques de temps ou si ton chien est très énergique."
     ],
-    "titreParagraphe2": "Objectifs",
-    "contentParagraphe2": [
-      "Apporter la stimulation physique et mentale dont ton chien à besoin en ton absence",
-      "Renforcer son bien-être grâce à des sorties riches en exploration, en interactions et en découvertes.",
-      "Maintenir et entretenir des interactions sociales équilibrées en petits groupes."
+    "titreItem2": "Objectifs",
+    "introItem2": "Pendant ton absence, je prends le relais dans le respect du rythme de ton bolide :",
+    "contentItem2": [
+      "Sortie hygiénique et vrai moment de dépense en extérieur.",
+      "Repas, nettoyage et changement des gamelles d’eau.",
+      "Soins simples si nécessaire (médicaments, nettoyage).",
+      "Temps de présence adapté : jeu, stimulation, moment calme ou câlins."
     ],
-    "titreParagraphe3": "Comment ça marche ?",
-    "contentParagraphe3": [
+    "titreItem3": "Comment ça marche ?",
+    "contentItem3": [
       "Je viens chercher ton chien à domicile (Rennes et alentours).",
       "Sortie de 2h en petit groupe ou en individuel selon ses besoins.",
       "Retour à la maison après une balade riche et sécurisée."
     ],
     "infoParagraphe3": "👉 Des frais de déplacement sont appliqués au-délà de 10 km autour de Rennes.",
-    "titreParagraphe4": "Localisation",
-    "contentParagraphe4": "Forêts, parcs, chemins de campagne et espaces naturels autour et dans Rennes."
+    "titreItem4": "Localisation",
+    "contentItem4": "Forêts, parcs, chemins de campagne et espaces naturels autour et dans Rennes.",
+    "titreItem5": "Tarifs",
+    "contentTableau": [
+      "Service",
+      "Durée",
+      "Tarif",
+      "Visite à domicile et/ou Promenade individuelle ",
+      "30 min",
+      "15,00€",
+      "Visite à domicile et/ou Promenade individuelle ",
+      "1h",
+      "25,00€",
+      "Visite à domicile et/ou Promenade individuelle ",
+      "2h",
+      "32,00€"
+    ],
+    "contentItem5": [
+      "Un devis personnalisé peut être réalisé sur simple demande et sans engagement.",
+      "Chaque prestation peut être ajustée pour correspondre au mieux aux besoins de ton chien et à ton organisation.",
+      "Des tarifs adaptés sont proposés si ton chien a besoin de plusieurs visites dans la journée ou si je prends le relais pendant plus de 4 jours consécutifs."
+    ]
   }
 ]

@@ -7,7 +7,6 @@ const fetchData = async () => {
 
     function generatorServices(dataServices) {
       const services__liste = document.querySelector("#services__liste div");
-
       const allButtons = [];
       // GÉNÉRATION SERVICES
       for (let i = 0; i < dataServices.length; i++) {
@@ -48,137 +47,151 @@ const fetchData = async () => {
         services__card__tarifs.appendChild(duree);
         duree.innerText = dataServices[i].duree;
 
-        const button__resp = document.createElement("button");
-        services__card.appendChild(button__resp);
-        button__resp.innerText = "En savoir plus";
-        allButtons.push(button__resp);
+        const services__card__tarifs__RESP = document.createElement("div");
+        services__card__tarifs__RESP.classList.add(
+          "services__card__tarifs__resp",
+        );
+        services__card__txt.appendChild(services__card__tarifs__RESP);
+
+        const prix__RESP = document.createElement("h3");
+        services__card__tarifs__RESP.appendChild(prix__RESP);
+        prix__RESP.innerText = dataServices[i].prix;
+
+        const duree__RESP = document.createElement("h4");
+        services__card__tarifs__RESP.appendChild(duree__RESP);
+        duree__RESP.innerText = dataServices[i].duree;
       }
 
       allButtons.forEach((button, index) => {
         button.addEventListener("click", (event) => {
-          const modal = document.getElementById("modal__liste");
-          modal.style.display = "flex";
-          html.style.overflow = "hidden";
+          const modale = document.getElementById("modale");
+          modale.style.top = "0vh";
+          document.body.classList.add("bodyBloquage");
 
-          const close = document.querySelector(".modal__card__intro img");
+          const close = document.querySelector("#modale__close button");
           close.addEventListener("click", (event) => {
-            modal.style.display = "none";
-            html.style.overflow = "auto";
+            modale.style.top = "100vh";
+            document.body.classList.remove("bodyBloquage");
           });
 
           const handleOutsideClick = (event) => {
-            if (event.target === modal) {
-              modal.style.display = "none";
+            if (event.target === modale) {
               html.style.overflow = "auto";
-              modal.removeEventListener("click", handleOutsideClick);
+              modale.removeEventListener("click", handleOutsideClick);
             }
           };
-          modal.addEventListener("click", handleOutsideClick);
+          modale.addEventListener("click", handleOutsideClick);
 
-          // Empêche la propagation des clics à l'intérieur de modal__card
-          const modalCard = document.querySelector(".modal__card");
-          modalCard.addEventListener("click", (event) => {
-            event.stopPropagation();
-          });
+          const modale__img = document.querySelector("#modale__intro > img");
+          const modale__titre = document.querySelector("#modale__intro__titre");
+          const modale__intro = document.querySelector("#modale__intro__txt");
+          modale__titre.innerText = dataServices[index].titre;
+          modale__intro.innerText = dataServices[index].intro;
 
-          const modal__card__intro = document.querySelector(
-            ".modal__card__intro h2",
+          // PREMIER POINT : POUR QUI ———————————————————————————————
+          const blocListe__card__item1__titre = document.querySelector(
+            ".blocListe__card__item1 h3",
           );
-          modal__card__intro.innerText = dataServices[index].titre;
-
-          // POUR QUI
-          const modal__card__paragraphe1 = document.querySelector(
-            ".modal__card__paragraphe1",
-          );
-          const modal__card__paragraphe1__titre = document.querySelector(
-            ".modal__card__paragraphe1 div h3",
-          );
-          modal__card__paragraphe1__titre.innerText =
-            dataServices[index].titreParagraphe1;
+          blocListe__card__item1__titre.innerText =
+            dataServices[index].titreItem1;
           const listeUl__1 = document.querySelector(
-            ".modal__card__paragraphe1 ul",
+            ".blocListe__card__item1 ul",
           );
           listeUl__1.innerHTML = "";
 
-          for (
-            let j = 0;
-            j < dataServices[index].contentParagraphe1.length;
-            j++
-          ) {
+          for (let j = 0; j < dataServices[index].contentItem1.length; j++) {
             const li = document.createElement("li");
             listeUl__1.appendChild(li);
-            li.innerText = dataServices[index].contentParagraphe1[j];
+            li.innerText = dataServices[index].contentItem1[j];
           }
 
-          // OBJECTIFS
-          const modal__card__paragraphe2 = document.querySelector(
-            ".modal__card__paragraphe2",
+          // SECOND POINT : OBJECTIFS ———————————————————————————————
+          const blocListe__card__item2__titre = document.querySelector(
+            ".blocListe__card__item2 h3",
           );
-          const modal__card__paragraphe2__titre = document.querySelector(
-            ".modal__card__paragraphe2 div h3",
+          blocListe__card__item2__titre.innerText =
+            dataServices[index].titreItem2;
+
+            /*
+          const blocListe__card__item2 = document.querySelector(
+            ".blocListe__card__item2",
           );
-          modal__card__paragraphe2__titre.innerText =
-            dataServices[index].titreParagraphe2;
+
+          if (dataServices[index].introItem2 != "") {
+            const pItem2 = document.createElement("p");
+            blocListe__card__item2.appendChild(pItem2);
+            pItem2.innerText = dataServices[index].introItem2;
+          }
+            */
 
           const listeUl__2 = document.querySelector(
-            ".modal__card__paragraphe2 ul",
+            ".blocListe__card__item2 ul",
           );
           listeUl__2.innerHTML = "";
 
-          for (
-            let j = 0;
-            j < dataServices[index].contentParagraphe2.length;
-            j++
-          ) {
+          for (let j = 0; j < dataServices[index].contentItem2.length; j++) {
             const li = document.createElement("li");
             listeUl__2.appendChild(li);
-            li.innerText = dataServices[index].contentParagraphe2[j];
+            li.innerText = dataServices[index].contentItem2[j];
           }
 
-          // COMMENT ÇA MARCHE
-          const modal__card__paragraphe3 = document.querySelector(
-            ".modal__card__paragraphe3",
+          // TROISIÈME POINT : COMMENT ÇA MARCHE ———————————————————————————————
+          const blocListe__card__item3__titre = document.querySelector(
+            ".blocListe__card__item3 h3",
           );
-          const modal__card__paragraphe3__titre = document.querySelector(
-            ".modal__card__paragraphe3 div h3",
-          );
-          modal__card__paragraphe3__titre.innerText =
-            dataServices[index].titreParagraphe3;
+          blocListe__card__item3__titre.innerText =
+            dataServices[index].titreItem3;
           const listeUl__3 = document.querySelector(
-            ".modal__card__paragraphe3 ul",
+            ".blocListe__card__item3 ul",
           );
           listeUl__3.innerHTML = "";
 
-          for (
-            let j = 0;
-            j < dataServices[index].contentParagraphe3.length;
-            j++
-          ) {
+          for (let j = 0; j < dataServices[index].contentItem3.length; j++) {
             const li = document.createElement("li");
             listeUl__3.appendChild(li);
-            li.innerText = dataServices[index].contentParagraphe3[j];
+            li.innerText = dataServices[index].contentItem3[j];
           }
 
-          const modal__card__paragraphe3__infoDeplacement =
-            document.querySelector(
-              ".modal__card__paragraphe3 .infoDeplacement",
-            );
-          modal__card__paragraphe3__infoDeplacement.innerText =
+          const blocListe__card__item3__infoDeplacement =
+            document.querySelector(".blocListe__card__item3 .infoDeplacement");
+          blocListe__card__item3__infoDeplacement.innerText =
             dataServices[index].infoParagraphe3;
 
-          // LOCALISATION
-          const modal__card__paragraphe4 = document.querySelector(
-            ".modal__card__paragraphe4",
+          // QUATRIÈME POINT : LOCALISATION ———————————————————————————————
+          const blocListe__card__item4__titre = document.querySelector(
+            ".blocListe__card__item4 h3",
           );
-          const modal__card__paragraphe4__titre = document.querySelector(
-            ".modal__card__paragraphe4 div h3",
-          );
-          modal__card__paragraphe4__titre.innerText =
-            dataServices[index].titreParagraphe4;
+          blocListe__card__item4__titre.innerText =
+            dataServices[index].titreItem4;
           const pLocalisation = document.querySelector(
-            ".modal__card__paragraphe4 p",
+            ".blocListe__card__item4 p",
           );
-          pLocalisation.innerText = dataServices[index].contentParagraphe4;
+          pLocalisation.innerText = dataServices[index].contentItem4;
+
+          // CINQUIÈME POINT : TARIFS ———————————————————————————————
+          const blocListe__card__item5__titre = document.querySelector(
+            ".blocListe__card__item5 h3",
+          );
+          blocListe__card__item5__titre.innerText =
+            dataServices[index].titreItem5;
+
+          const tableau = document.querySelector(".tableau");
+          tableau.innerHTML = "";
+          for (let j = 0; j < dataServices[index].contentTableau.length; j++) {
+            const pTableau = document.createElement("p");
+            tableau.appendChild(pTableau);
+            pTableau.innerText = dataServices[index].contentTableau[j];
+          }
+
+          const listeUl__5 = document.querySelector(
+            ".blocListe__card__item5 ul",
+          );
+          listeUl__5.innerHTML = "";
+          for (let j = 0; j < dataServices[index].contentItem5.length; j++) {
+            const li = document.createElement("li");
+            listeUl__5.appendChild(li);
+            li.innerText = dataServices[index].contentItem5[j];
+          }
         });
       });
     }
