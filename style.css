@@ -387,7 +387,7 @@ header {
       flex-direction: column;
     }
     .blocListe__card__item2 > *:nth-child(3) {
-     order: 1;
+      order: 1;
     }
     .services__card:nth-child(4) {
       border-bottom: 3px dashed black;
@@ -595,7 +595,7 @@ header {
   padding: 85px 36px;
   margin-top: -5px;
   @media (max-width: 600px) {
-    padding: 0px 24px 56px 24px;
+    padding: 48px 24px 56px 24px;
   }
   .marginSite {
     background-image: url(sources/bg-os.png);
@@ -663,7 +663,8 @@ header {
         flex-direction: column;
         align-items: center;
       }
-      .contact__coordonnees__link a {
+      .contact__coordonnees__link a,
+      .contact__coordonnees__link div {
         display: flex;
         gap: 8px;
         align-items: center;
@@ -887,11 +888,6 @@ header {
     gap: 48px;
     background-color: white;
     margin-top: -10px;
-  }
-  #divider-demarche {
-    @media (max-width: 600px) {
-      margin-bottom: 48px;
-    }
   }
 }
 

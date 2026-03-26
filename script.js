@@ -112,7 +112,7 @@ const fetchData = async () => {
           blocListe__card__item2__titre.innerText =
             dataServices[index].titreItem2;
 
-            /*
+          /*
           const blocListe__card__item2 = document.querySelector(
             ".blocListe__card__item2",
           );
@@ -236,21 +236,23 @@ openMenu.addEventListener("click", () => {
     burger1.style.position = "relative";
     burger2.style.position = "relative";
   }
-});
-/*
-h2s.forEach((h2) => {
-  h2.addEventListener("click", () => {
-    menu.style.display = "none";
-    html.style.overflow = "auto";
-    openMenu.style.paddingRight = "0px";
-    header.style.backgroundColor = "#ffde45";
-    burger1.style.transform = "rotate(0deg)";
-    burger2.style.transform = "rotate(0deg)";
-    burger1.style.position = "relative";
-    burger2.style.position = "relative";
+
+  // REDIRECTION LIEN MENU
+  const btnmenu = document.querySelectorAll("#menu__liens a");
+  const allButtonsMenu = [btnmenu[0], btnmenu[1], btnmenu[2], btnmenu[3]];
+  allButtonsMenu.forEach((button, index) => {
+    button.addEventListener("click", (event) => {
+      menu.style.display = "none";
+      html.style.overflow = "auto";
+      openMenu.style.paddingRight = "0px";
+      header.style.backgroundColor = "#ffde45";
+      burger1.style.transform = "rotate(0deg)";
+      burger2.style.transform = "rotate(0deg)";
+      burger1.style.position = "relative";
+      burger2.style.position = "relative";
+    });
   });
 });
-*/
 
 // HEADER APPARITION SCROLL
 let lastScrollPosition = 0;
